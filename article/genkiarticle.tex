@@ -5,45 +5,63 @@
 \usepackage{times}
 \usepackage{helvet}
 \usepackage{courier}
+
 \frenchspacing
 \setlength{\pdfpagewidth}{8.5in}
 \setlength{\pdfpageheight}{11in}
 \pdfinfo{
-/Title (Insert Your Title Here)
-/Author (Put All Your Authors Here, Separated by Commas)}
-\setcounter{secnumdepth}{0}  
+/Title (Genki - The Effects of Varying Sequential Rewards for User's Motivation to Complete a Set of Crowdfunded Tasks.)
+/Author (Helmut Prendinger, Ruben Geraldes, Daniela Fontes, Daniel Morais, Rui Prada)
+/Keywords (Crowdsourcing)}
+\setcounter{secnumdepth}{2}  
+\setlength\titlebox{8cm}
  \begin{document}
+ 
 % The file aaai.sty is the style file for AAAI Press 
 % proceedings, working notes, and technical reports.
 %
-\title{Formatting Instructions \\for Authors Using \LaTeX{}}
-\author{AAAI Press\\
-Association for the Advancement of Artificial Intelligence\\
-2275 East Bayshore Road, Suite 160\\
-Palo Alto, California 94303\\
+\title{Genki - The Effects of Varying Sequential Rewards for User's Motivation to Complete a Set of Crowdfunded Tasks}
+\author{Helmut Prendinger \\
+helmut@nii.ac.jp\\
+National Institute of Informatics,\\
+2-1-2 Hitotsubashi, Chiyoda-ku, \\ Tokyo, 101-8430, Japan \\ 
+\And Ruben Geraldes \\
+rubengeraldes@gmail.com \\
+Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
+	Av. Prof. Cavaco Silva, \\ Taguspark Porto Salvo, Portugal\\ 
+	\And Daniela Fontes\\
+	daniela.fontes@ist.utl.pt \\
+	Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
+	Av. Prof. Cavaco Silva, \\ Taguspark Porto Salvo, Portugal\\
+	\AND Daniel Morais\\
+	rui.prada@tecnico.ulisboa.pt\\
+	Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
+	Av. Prof. Cavaco Silva, \\ Taguspark Porto Salvo, Portugal\\
+	\And Rui Prada\\
+	rui.prada@tecnico.ulisboa.pt\\
+	INESC-ID ,\\
+	Av. Prof. Cavaco Silva, \\ Taguspark Porto Salvo, Portugal\\		
 }
+
+
+
 \maketitle
+
+% If the title and author information does not fit in the area allocated,
+% place \setlength\titlebox{height}
+% after the \documentstyle line
+% where {height} is something like 2.5in
+
 \begin{abstract}
+		
 \begin{quote}
-AAAI creates proceedings, working notes, and technical reports directly from electronic source furnished by the authors. To ensure that all papers in the publication have a uniform appearance, authors must adhere to the following instructions. 
+A good abstract will leave people satisfied that they know
+\\ what you did, \\ why you did it, \\ and what you found out. 
+\\ Keep it at 120 words.
 \end{quote}
 \end{abstract}
 
-\noindent Congratulations on having a paper selected for inclusion in an AAAI Press proceedings or technical report! This document details the requirements necessary to get your accepted paper published using \LaTeX{}. If you are using Microsoft Word, instructions are provided in a different document. If you want to use some other formatting software, you must obtain permission from AAAI Press first. 
 
-The instructions herein are provided as a general guide for experienced \LaTeX{} users who would like to use that software to format their paper for an AAAI Press publication or report. If you are not an experienced \LaTeX{} user, do not use it to format your paper. AAAI cannot provide you with support and the accompanying style files are \textbf{not} guaranteed to work. If the results you obtain are not in accordance with the specifications you received, you must correct your source file to achieve the correct result. 
-
-These instructions are generic. Consequently, they do not include specific dates, page charges, and so forth. Please consult your specific written conference instructions for details regarding your submission. Please review the entire document for specific instructions that might apply to your particular situation. All authors must comply with the following:
-
-\begin{itemize}
-\item You must use the latest AAAI Press \LaTeX{} macro.
-\item Download the author kit.
-\item Complete, sign, and return by the deadline the AAAI copyright form (proceedings authors) or distribution license (technical report authors).
-\item Read and format your paper source and PDF according to the formatting instructions for authors.
-\item Submit your electronic files and abstract using our electronic submission form \textbf{on time.}
-\item Submit your copyright form, and any required page or formatting charges to AAAI Press so that they are received by the deadline.
-\item Check every page of your paper before submitting it.
-\end{itemize}
 
 \section{Copyright}
 All papers submitted for publication by AAAI Press must be accompanied by a valid signed copyright form or, in the case of technical reports, by a valid signed permission to distribute form. There are no exceptions to this requirement. You must send us the original version of this form. However, to meet the deadline, you may fax (1-650-321-4457) or scan and e-mail the form (pubforms15@aaai.org) to AAAI by the submission deadline, and then mail the original via postal mail to the AAAI office. \textbf{If you fail to send in a signed copyright or permission form, your paper will not be published.} You will find PDF versions of the AAAI copyright and permission to distribute forms in the author kit.
@@ -359,7 +377,7 @@ The acknowledgments section, if included, appears after the main body of text an
 Any appendices follow the acknowledgments, if included, or after the main body of text if no acknowledgments appear. 
 
 \subsubsection{References}
-The references section should be labeled ``References" and should appear at the very end of the paper (don't end the paper with references, and then put a figure by itself on the last page). A sample list of references is given later on in these instructions. Please use a consistent format for references. Poorly prepared or sloppy references reflect badly on the quality of your paper and your research. Please prepare complete and accurate citations.
+The references section should be labeled ``References" and should appear at the very end of the paper (don't end the paper with references, and then put a figure by itself on the last page). A sample list of references is given later on in these instructions. Please use a consistent format for references. Poorly prepared or sloppy references reflect badly on the quality of your paper and your research. Please prepare complete and accurate citations. \cite{Choi2014}
 
 \subsection{Illustrations and Figures}
 Figures, drawings, tables, and photographs should be placed throughout the paper near the place where they are first discussed. Do not group them together at the end of the paper. If placed at the top or bottom of the paper, illustrations may run across both columns. Figures must not invade the top, bottom, or side margin areas. Figures must be inserted using the \textbackslash usepackage\{graphicx\}. Number figures sequentially, for example, figure 1, and so on. 
@@ -388,6 +406,10 @@ Resize your graphics \textbf{before} you include them with LaTeX. You may \textb
 You must embed all fonts in your graphics before including them in your LaTeX document.
 
 \subsection{References} 
+
+
+
+
 The aaai.sty file includes a set of definitions for use in formatting references with BibTeX. These definitions make the bibliography style fairly close to the one specified below. To use these definitions, you also need the BibTeX style file ``aaai.bst," available in the author kit on the AAAI web site. Then, at the end of your paper but before \textbackslash end{document}, you need to put the following lines:
 
 \begin{quote}
@@ -502,4 +524,6 @@ The preparation of the \LaTeX{} and Bib\TeX{} files that implement these instruc
 \bigskip
 \noindent Thank you for reading these instructions carefully. We look forward to receiving your electronic files!
 
+\bibliographystyle{aaai}
+\bibliography{genkiarticle}
 \end{document}
