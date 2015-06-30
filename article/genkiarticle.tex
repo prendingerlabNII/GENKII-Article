@@ -10,7 +10,7 @@
 \setlength{\pdfpagewidth}{8.5in}
 \setlength{\pdfpageheight}{11in}
 \pdfinfo{
-/Title (Genki - The Effects of Varying Sequential Rewards for User's Motivation to Complete a Set of Crowdfunded Tasks.)
+/Title (Genkii - The Effects of Varying Sequential Rewards for User's Motivation to Complete a Set of Crowdfunded Tasks.)
 /Author (Helmut Prendinger, Ruben Geraldes, Daniela Fontes, Daniel Morais, Rui Prada)
 /Keywords (Crowdsourcing)}
 \setcounter{secnumdepth}{2}  
@@ -20,7 +20,7 @@
 % The file aaai.sty is the style file for AAAI Press 
 % proceedings, working notes, and technical reports.
 %
-\title{Genki - The Effects of Varying Sequential Rewards for User's Motivation to Complete a Set of Crowdfunded Tasks}
+\title{Genkii - The Effects of Varying Sequential Rewards for User's Motivation to Complete a Set of Crowdfunded Tasks}
 \author{Helmut Prendinger \\
 helmut@nii.ac.jp\\
 National Institute of Informatics,\\
@@ -64,6 +64,17 @@ A good abstract will leave people satisfied that they know
 \section{Introduction}
 
 \subsection{Motivation}
+
+
+
+The ubiquity of hand-held devices opened up new opportunities for research. Nowadays it is accessible to perform off-site studies, and collect data in real-time and across great geographical spans.
+
+This new paradigm also gives rise to the search for new methodologies, and best practices, which may help the scientific community improve and stage new experiments, in a way that optimizes its resources.
+ 
+Genkii was conceived after realizing some problems in attracting users for crowdsourced studies in Japan. The initial hypothesis for this problem in attracting users for social studies had to do with privacy issues.
+
+We want to study the effects of varying inducements to get people to perform a determined task repeatedly.
+
 \subsection{Outline}
 
 \section{Related Work}
@@ -86,7 +97,33 @@ out intrinsic motivations in the run short and the long run.
 \cite{Gneezy2011}
 
 
-\section{Genki}
+Crowdsourcing has been often associated with Gamification, the use of game-design elements to achieve a more compelling user-experience driven by fun.
+
+
+The use of rewards to induce a desired behavior has been thoroughly studied. 
+There has been a clear separation between intrinsic rewards and extrinsinc rewards. 
+
+According to \cite{Gneezy2011}, there are instances where monetary rewards (extrinsic rewards), work well to provide a 
+
+
+
+
+
+\section{Genkii}
+
+
+Genkii is an application that enables gps localized satisfaction reports. Users report their ''Genkiiness'', by performing three different gestures:
+
+\begin{itemize}
+	\item Circle meaning that the person feels happy/genkii;
+	\item Triangle which represents an ''OK'' state;
+	\item Cross which denotes sadness.
+\end{itemize}
+
+
+
+
+
 \subsection{Implementation}
 
 \subsection{Yahoo Crowdsourcing Japan}
@@ -94,12 +131,31 @@ out intrinsic motivations in the run short and the long run.
 
 \subsection{Crowdsourcing Campaign}
 
-Following the methodology suggested by \cite{Choi2014}, we want a study with a control group: fixed reward
-Using the same amount of money as an incentive.
-We'll do the progressive reward system, and study user drop rates.
+Following the methodology suggested by \cite{Choi2014}, we want to perform a study where one group will be considered our baseline by receiving a fixed reward for each task over time.
+Besides our control group we devise a second incentive scheme, that using the same amount of points, poses as a progressive reward system. We can compare both reward schemes on \ref{tab:rewards}.
 
+Our goal is to study this and compare these two incentive schemes, specially by studying user enrollment rates and user drop rates.
+ 
+
+\begin{table}[!h]
+	\caption{ Scheme of rewards used for the crowdsourcing campaign. Using the same amount of reward points, for our first group these rewards are the same for every task over time. On the second group we devised an increasing reward mechanism. }
+	\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+	\hline  Reward & Task 1  & Task 2  & Task 3  & Task 4 & Task 5 & Task 6 & Task 7 & Task 8 & Task 9 & Task 10 \\ 
+	\hline  Stable Rewards & 20 & 20 & 20 & 20 & 20 & 20 & 20 & 20 & 20 & 20 \\ 
+	\hline Increasing Rewards & 5 & 10 & 15 & 30 & 35 & 40 & 50 & 60 & 60 & 60 \\ 
+	\hline 
+\end{tabular} 
+\end{center}
+\label{tab:rewards}
+\end{table}
+
+
+The first campaign ran from 19/06/2015 ti 26/06/2015. 
 
 \section{Results}
+
+The first campaign counted with 436 genkii reports.
 
 \section{Conclusions}
 

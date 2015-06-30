@@ -1,0 +1,23 @@
+Extracting the tables from database.
+
+
+Using phpMyAdmin:
+
+go to each of the tables:
+
+	*context
+	*gesture
+	*report
+	*user
+
+after selecting the table:
+
+1. Export
+
+2. Select "Custom Method"
+
+3. Select: "CSV for Excel"
+
+4. Tick: "Put columns names in the first row"
+
+5. Go

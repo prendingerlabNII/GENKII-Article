@@ -1,0 +1,213 @@
+"id";"hand";"brand";"model";"isYahoo";"joined";"yahooTaskFinished"
+"1";"Right";"samsung";"GT-I9505";"0";"1427261464034";NULL
+"2";"Right";"motorola";"XT1032";"1";"1427261642095";NULL
+"3";"Right";"google";"Nexus 7";"0";"1427261565001";NULL
+"4";"Left";"google";"Nexus 5";"0";"1427275242609";NULL
+"5";"Right";"Sony";"D5803";"0";"1427281405513";NULL
+"6";"Right";"SBM";"SBM205SH";"1";"1427281493605";NULL
+"7";"Right";"SG";"402SH";"1";"1427282201706";NULL
+"8";"Right";"DOCOMO";"SH-06E";"1";"1427282615119";NULL
+"9";"Right";"google";"Nexus 7";"1";"1427282790025";NULL
+"10";"Right";"google";"Nexus 7";"1";"1427283136371";NULL
+"11";"Right";"asus";"ME173X";"1";"1427283012468";NULL
+"12";"Right";"asus";"ME173X";"1";"1427284238916";"1427472228505"
+"13";"Right";"samsung";"SC-04F";"1";"1427285603581";NULL
+"14";"Right";"google";"Nexus 5";"1";"1427285673076";NULL
+"15";"Right";"docomo";"SO-04E";"1";"1427286476805";NULL
+"16";"Right";"KDDI";"LGL23";"0";"1427287157591";NULL
+"17";"Right";"docomo";"SO-04E";"1";"1427290166910";NULL
+"18";"Right";"docomo";"SO-04E";"1";"1427290683789";NULL
+"19";"Right";"KDDI";"AST21";"1";"1427292307268";NULL
+"20";"Right";"SG";"305SH";"1";"1427292456611";NULL
+"21";"Right";"lge";"L-01F";"0";"1427296029310";NULL
+"22";NULL;"lge";"L-01F";"0";"1427296029310";NULL
+"23";"Right";"docomo";"SO-04E";"1";"1427296645016";NULL
+"24";"Right";"docomo";"SO-01F";"1";"1427297965781";NULL
+"25";"Right";"SG";"305SH";"1";"1427300077829";NULL
+"26";"Right";"google";"Nexus 5";"1";"1427300204729";NULL
+"27";"Right";"samsung";"SC-01F";"1";"1427301505281";NULL
+"28";"Right";"asus";"ASUS_T00P";"1";"1427302992513";NULL
+"29";"Right";"KDDI";"SHL25";"1";"1427311988431";NULL
+"30";"Right";"samsung";"SC-04E";"1";"1427312495881";NULL
+"31";"Left";"Sony";"D6603";"0";"1427318788203";NULL
+"32";"Right";"htc";"HTL22";"1";"1427323841638";"1427617535170"
+"33";"Right";"docomo";"SO-04E";"1";"1427324057470";NULL
+"34";"Right";"docomo";"SO-04E";"1";"1427331296793";NULL
+"35";"Right";"docomo";"SO-04E";"1";"1427331653912";NULL
+"36";"Right";"KDDI";"SOL26";"1";"1427333085103";NULL
+"37";"Right";"KDDI";"SOL25";"1";"1427334935354";NULL
+"38";"Right";"DOCOMO";"F-05F";"1";"1427336377330";NULL
+"39";"Right";"SHARP";"SH90B";"1";"1427332591424";NULL
+"40";"Right";"Huawei";"302HW";"1";"1427338882836";NULL
+"41";"Right";"SBM";"DM014SH";"1";"1427339875998";NULL
+"42";"Right";"KDDI";"SCL23";"1";"1427341951244";NULL
+"43";"Right";"SG";"305SH";"1";"1427342732723";NULL
+"44";"Right";"docomo";"SO-04E";"1";"1427351630396";NULL
+"45";"Right";"DOCOMO";"F-02F";"1";"1427363425449";NULL
+"46";"Right";"lge";"L-01F";"1";"1427363444572";NULL
+"47";"Right";"google";"Nexus 5";"1";"1427370054392";NULL
+"48";"Right";"google";"Nexus 5";"1";"1427370305799";NULL
+"49";"Right";"docomo";"SO-04E";"1";"1427325647097";NULL
+"50";"Right";"DOCOMO";"F-10D";"1";"1427378716049";NULL
+"51";"Left";"asus";"ASUS_T00P";"1";"1427390595425";NULL
+"52";"Right";"google";"Nexus 5";"1";"1427413167899";NULL
+"53";"Right";"Huawei";"302HW";"1";"1427418057918";NULL
+"54";"Right";"SBM";"302KC";"0";"1427418272593";NULL
+"55";"Right";"KDDI";"SHL22";"1";"1427418970283";NULL
+"56";"Right";"KDDI";"SHL22";"1";"1427419795115";NULL
+"57";"Right";"DOCOMO";"F-05F";"1";"1427426781518";NULL
+"58";"Right";"asus";"ASUS_T00P";"1";"1427427487982";NULL
+"59";"Right";"samsung";"SC-02F";"1";"1427427944521";NULL
+"60";"Right";"docomo";"SO-01G";"1";"1427428570642";NULL
+"61";"Right";"docomo";"SO-03F";"1";"1427428978857";NULL
+"62";"Right";"SBM";"WX05SH";"1";"1427434873338";NULL
+"63";"Right";"Huawei";"GL07S";"1";"1427444205112";NULL
+"64";"Right";"SBM";"302KC";"0";"1427455551874";NULL
+"65";"Right";"DOCOMO";"F-01F";"1";"1427457908626";NULL
+"66";"Right";"htc";"HTL23";"1";"1427459061302";NULL
+"67";"Right";"samsung";"SC-04E";"1";"1427462859302";NULL
+"68";"Right";"samsung";"SC-06D";"1";"1427469368079";NULL
+"69";"Right";"samsung";"SC-04E";"1";"1427506387191";NULL
+"70";"Right";"SG";"305SH";"1";"1427528727362";NULL
+"71";"Right";"google";"Nexus 5";"1";"1427530831892";NULL
+"72";"Left";"SBM";"202K";"1";"1427549329881";NULL
+"73";"Right";"google";"Nexus 5";"1";"1427550816619";NULL
+"74";"Right";"google";"Nexus 7";"1";"1427616900277";NULL
+"75";"Right";"SHARP";"SH90B";"1";"1427587078182";NULL
+"76";"Right";"SG";"304SH";"0";"1427597300076";NULL
+"77";"Right";"KDDI";"FJL22";"1";"1427606386807";NULL
+"78";"Right";"google";"Nexus 5";"1";"1427608041770";NULL
+"79";"Right";"KDDI";"SOL23";"1";"1427619365478";NULL
+"80";"Right";"samsung";"GT-I9505";"1";"1428092565980";NULL
+"81";"Right";"htc";"HTCONE";"0";"1428274636536";NULL
+"82";"Right";"Sony";"C6903";"1";"1428362304266";NULL
+"83";"Right";"Sony";"D5803";"0";"1428421693585";NULL
+"84";"Right";"lge";"LG-D802";"0";"1428939064002";NULL
+"85";"Right";"samsung";"GT-I9505";"0";"1428114380547";NULL
+"86";NULL;"generic_x86";"Android SDK built for x86";"0";"1430119872785";NULL
+"87";NULL;"generic_x86";"Android SDK built for x86";"0";"1430119872785";NULL
+"88";NULL;"generic_x86";"Android SDK built for x86";"0";"1430119872785";NULL
+"89";"Right";"motorola";"XT1032";"0";"1431932309190";NULL
+"90";"Right";"google";"Nexus 7";"0";"1433397433038";NULL
+"91";"Right";"motorola";"XT1032";"1";"1434084477878";NULL
+"92";"Right";"samsung";"GT-I9505";"1";"1434085130454";NULL
+"93";"Right";"samsung";"GT-I9505";"1";"1434085497948";NULL
+"94";"Right";"samsung";"GT-I9505";"1";"1434087940674";NULL
+"95";"Right";"samsung";"GT-I9505";"0";"1434088060334";NULL
+"96";"Right";"motorola";"XT1032";"0";"1434508098101";NULL
+"97";NULL;"motorola";"XT1032";"0";"1434698764258";NULL
+"98";"Right";"motorola";"XT1032";"1";"1434698874876";NULL
+"99";"Right";"samsung";"GT-I9505";"0";"1434699810674";NULL
+"100";"Right";"google";"Nexus 6";"1";"1434701495077";NULL
+"101";"Right";"google";"Nexus 6";"0";"1434706348751";NULL
+"102";"Left";"asus";"ME173X";"1";"1434724711705";"1434930916743"
+"103";"Right";"KDDI";"SOL24";"1";"1434726466125";NULL
+"104";"Right";"google";"Nexus 7";"1";"1434726797306";NULL
+"105";"Right";"KDDI";"SOL26";"1";"1434727188727";NULL
+"106";"Right";"DOCOMO";"F-01F";"1";"1434729594329";NULL
+"107";"Right";"docomo";"SO-01F";"1";"1434730373895";NULL
+"108";"Right";"KDDI";"KYY21";"1";"1434731287397";NULL
+"109";"Right";"docomo";"SO-01G";"1";"1434742728492";NULL
+"110";"Right";"SBM";"401SO";"1";"1434743618305";NULL
+"111";"Right";"KDDI";"SOL23";"1";"1434747290197";NULL
+"112";"Right";"KDDI";"SOL23";"1";"1434747431572";NULL
+"113";"Right";"KDDI";"SOL26";"1";"1434747670339";NULL
+"114";"Right";"google";"Nexus 5";"1";"1434756474891";NULL
+"115";"Right";"google";"Nexus 5";"1";"1434756787802";"1434954660143"
+"116";"Right";"google";"Nexus 6";"1";"1434760121757";NULL
+"117";"Right";"KDDI";"SOV31";"1";"1434760466385";NULL
+"118";"Right";"lge";"L-01F";"1";"1434762470103";"1435050562128"
+"119";"Right";"KDDI";"SOL23";"1";"1434763024655";NULL
+"120";"Right";"KDDI";"SOL23";"1";"1434763522417";NULL
+"121";"Right";"google";"Nexus 5";"1";"1434763539250";NULL
+"122";"Left";"samsung";"SC-02E";"1";"1434764520190";NULL
+"123";"Right";"docomo";"SO-04F";"1";"1434764820384";"1435149913985"
+"124";"Right";"docomo";"SO-01E";"1";"1434765441217";NULL
+"125";"Right";"docomo";"SO-01G";"1";"1434771744086";"1435203862123"
+"126";"Left";"asus";"ASUS_T00P";"1";"1434771909496";NULL
+"127";"Right";"samsung";"SC-04E";"1";"1434776590827";NULL
+"128";"Right";"samsung";"SC-04F";"1";"1434777269861";NULL
+"129";"Right";"DOCOMO";"SH-01F";"1";"1434778003286";NULL
+"130";"Right";"KDDI";"SCL23";"1";"1434778652708";NULL
+"131";"Right";"docomo";"SO-03F";"1";"1434780605954";NULL
+"132";"Right";"SBM";"SBM303SH";"1";"1434780543074";NULL
+"133";"Right";"google";"Nexus 5";"1";"1434796392197";NULL
+"134";"Right";"google";"Nexus 6";"1";"1434799239042";NULL
+"135";"Right";"KDDI";"SOL26";"1";"1434807925080";NULL
+"136";"Right";"DOCOMO";"SH-06E";"1";"1434808003162";NULL
+"137";"Right";"htc";"HTL22";"1";"1434808471996";"1435295714626"
+"138";"Right";"SBM";"401SO";"1";"1434815584405";NULL
+"139";"Right";"docomo";"SO-01G";"1";"1434815659711";NULL
+"140";"Right";"KYOCERA";"404KC";"1";"1434834469374";NULL
+"141";"Right";"KDDI";"SOL23";"1";"1434835752878";NULL
+"142";"Right";"KDDI";"SHL21";"1";"1434836462682";NULL
+"143";"Right";"docomo";"SO-04E";"1";"1434839161673";NULL
+"144";"Right";"SBM";"SBM205SH";"1";"1434839250715";NULL
+"145";"Right";"google";"Nexus 5";"1";"1434839681556";NULL
+"146";"Left";"asus";"ASUS_T00P";"1";"1434840044414";NULL
+"147";"Right";"docomo";"SO-02E";"1";"1434843819324";NULL
+"148";"Right";"KDDI";"SOV31";"1";"1434846971562";NULL
+"149";"Left";"samsung";"SC-04E";"1";"1434849120922";NULL
+"150";"Right";"DOCOMO";"SH-01F";"1";"1434849360339";NULL
+"151";"Right";"htc";"HTL22";"1";"1434852614722";NULL
+"152";"Right";"KDDI";"SOL25";"1";"1434854203172";NULL
+"153";"Left";"SBM";"SBM302SH";"1";"1434868629967";NULL
+"154";"Right";"KDDI";"SHL25";"1";"1434870563699";NULL
+"155";"Right";"DOCOMO";"SH-01F";"1";"1434874072530";NULL
+"156";"Left";"SG";"402SH";"1";"1434876215577";NULL
+"157";"Right";"docomo";"SO-01G";"1";"1434877791508";NULL
+"158";"Right";"docomo";"SO-02E";"1";"1434885394724";NULL
+"159";"Right";"SBM";"302KC";"1";"1434886374120";NULL
+"160";"Right";"docomo";"SO-04E";"1";"1434886980672";NULL
+"161";"Right";"SBM";"WX10K";"1";"1434894553263";NULL
+"162";"Right";"KYOCERA";"404KC";"1";"1434903606246";"1435130168944"
+"163";"Right";"docomo";"SO-04E";"1";"1434778846761";"1435307997873"
+"164";"Right";"google";"Nexus 5";"1";"1434924830283";"1435145087044"
+"165";"Right";"samsung";"SC-02E";"1";"1434928586103";"1435220265658"
+"166";"Right";"samsung";"SC-04E";"1";"1434929010232";NULL
+"167";"Right";"SBM";"401SO";"1";"1434935878671";NULL
+"168";"Right";"Samsung";"SC-02C";"1";"1434936638423";NULL
+"169";"Right";"BRCM";"CP-F50aK";"1";"1434940517447";NULL
+"170";"Right";"SG";"305SH";"1";"1434944245982";NULL
+"171";"Left";"DOCOMO";"SH-01F";"1";"1434948752980";NULL
+"172";"Right";"docomo";"SO-04E";"1";"1434950325468";NULL
+"173";"Right";"DOCOMO";"F-07E";"1";"1434963326011";NULL
+"174";"Right";"DOCOMO";"F-07E";"1";"1434964727882";NULL
+"175";"Right";"docomo";"SO-02E";"1";"1434966373446";NULL
+"176";"Right";"docomo";"SO-02E";"1";"1434966373446";NULL
+"177";"Right";"samsung";"GT-I9500";"1";"1434970300443";NULL
+"178";"Right";"samsung";"SC-06D";"1";"1434976219825";NULL
+"179";"Right";"samsung";"SC-06D";"1";"1434976999430";NULL
+"180";"Right";"KDDI";"LGL22";"0";"1434977091513";NULL
+"181";"Right";"KDDI";"LGL22";"1";"1434977342548";NULL
+"182";"Right";"samsung";"SC-06D";"1";"1434978021716";NULL
+"183";"Right";"SG";"305SH";"1";"1434984241226";NULL
+"184";"Right";"google";"Nexus 5";"0";"1434988190347";NULL
+"185";"Right";"docomo";"SO-04E";"1";"1434887189281";NULL
+"186";"Right";"KDDI";"SOL23";"1";"1435009706206";NULL
+"187";"Right";"SBM";"SBM206SH";"1";"1435018001523";NULL
+"188";"Right";"VEGA";"IM-A850S";"1";"1435019334990";NULL
+"189";"Right";"KDDI";"LGV31";"1";"1435027752276";NULL
+"190";"Right";"VEGA";"IM-A850S";"1";"1435037054477";NULL
+"191";"Right";"KYOCERA";"404KC";"1";"1435037256241";NULL
+"192";"Right";"KDDI";"KYY24";"1";"1435039376915";NULL
+"193";"Right";"DOCOMO";"SH-01G";"1";"1435071527390";NULL
+"194";"Right";"SBM";"401SO";"1";"1435093864008";NULL
+"195";"Right";"docomo";"SO-04E";"1";"1435029408945";NULL
+"196";"Right";"samsung";"SC-06D";"1";"1435118536951";NULL
+"197";"Right";"samsung";"SM-G530F";"1";"1435141158327";NULL
+"198";"Right";"SBM";"402LG";"1";"1435145353035";NULL
+"199";"Right";"KDDI";"SHL25";"1";"1435151896119";NULL
+"200";"Right";"SBM";"403SC";"1";"1435151918546";NULL
+"201";"Right";"google";"Nexus 5";"1";"1435160874623";NULL
+"202";"Right";"DOCOMO";"F-03F";"1";"1435172793399";NULL
+"203";"Right";"google";"Nexus 6";"1";"1435204472167";NULL
+"204";"Right";"samsung";"SC-04F";"1";"1435209170562";NULL
+"205";"Right";"DOCOMO";"F-01F";"1";"1435211828620";NULL
+"206";"Right";"SBM";"302KC";"1";"1435220566711";NULL
+"207";"Right";"google";"Nexus 6";"0";"1435232131552";NULL
+"208";"Right";"KDDI";"SOL22";"1";"1435232548564";NULL
+"209";"Right";"docomo";"SO-04E";"1";"1435276795851";NULL
+"210";"Right";"google";"Nexus 7";"1";"1435282692094";NULL
+"211";"Right";"docomo";"SO-02E";"1";"1435305663955";NULL
+"212";"Right";"google";"Nexus 6";"0";"1435504843537";NULL
