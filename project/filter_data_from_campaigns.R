@@ -18,3 +18,8 @@ report1st<- report[ (report$timestamp >= 1434672000000) & (report$timestamp < 14
 user1st <- user
 #new users who joined during the campaign for the first time
 user1st_new<- user[ (user$joined >= 1434672000000) & (user$joined < 1435330800000),]
+
+user1stTaskFinished<- user[ (user$yahooTaskFinished >= 1434672000000) & (user$yahooTaskFinished < 1435330800000),]
+
+#get date field
+report1st$date = as.Date(as.POSIXct(report1st$timestamp/1000.0, origin="1970-01-01"))
