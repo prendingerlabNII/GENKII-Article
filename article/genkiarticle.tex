@@ -5,6 +5,7 @@
 \usepackage{times}
 \usepackage{helvet}
 \usepackage{courier}
+\usepackage{graphicx}
 
 \frenchspacing
 \setlength{\pdfpagewidth}{8.5in}
@@ -156,6 +157,35 @@ The first campaign ran from 19/06/2015 ti 26/06/2015.
 \section{Results}
 
 The first campaign counted with 436 genkii reports.
+115 users installed the Genkii application, and 79 users provided at least one report.
+ 
+The accuracy (the gesture predicted by the system being the same as the gesture confirmed), is 85.3\%.
+
+The main goal of this study is to compare the effect of rewards on the user's reporting behaviour.
+At first glance in order to understand the data collected it's important to study the overall frequency of the user reports. In the Figure \ref{fig:freqreports1} we can observe that in fact there seems to be considerable onboard with 39 users making 1 report.
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/FReports}
+		\caption{Frequency of Reports Made by Users. As expected, the number of users that made only a single Genkii report is very large, 39.\label{fig:freqreports1}}
+	\end{center}
+\end{figure}
+
+As we can observe in Figure \ref{fig:freqreportsperday1} the campaign quickly took off. During the last three days we verified a drop in the number of reports being made. Our hypothesis for this has to do with the architecture of the Yahoo crowdsourcing and a limit of times the each task could be unlocked, as we were primarily interested on studying the sequential behaviour. Also users understood that given the time constraint between reports (4 hours), it was became more difficult to finish the set of 10 tasks.
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/RPerDay}
+		\caption{Number of Reports made on each day of the campaign.\label{fig:freqreportsperday1}}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/NewUsers}
+		\caption{User acquisition throughout the campaign.\label{fig:newusers1}}
+	\end{center}
+\end{figure}
 
 \section{Conclusions}
 

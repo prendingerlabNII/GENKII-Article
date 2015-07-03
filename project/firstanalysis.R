@@ -23,9 +23,13 @@ plot(table(report1st$user_id))
 #frequency table
 ftable(table(report1st$user_id))
 
+summary(as.data.frame(table(report1st$user_id)))
+
 plot(as.data.frame(ftable(table(report1st$user_id))), xlab= "Number of reports made by a user", main="Frequency of the Number of Reports Made by the Users")
-
-
+Axis(as.data.frame(ftable(table(report1st$user_id))), at = c(0,5,10,15,20,25,30,35,40),side=2)
+axTicks(side=2)
+grid(nx = NULL, ny = NULL, col = "lightgray", lty = "dotted",lwd = par("lwd"))
+legend(text.font=12)
 #histogram of the frequency of reports
 hist(as.POSIXct(report1st$timestamp/1000.0, origin="1970-01-01"),"days", freq=TRUE, xlab="Campaign days", ylab="Number of Reports", main="Frequency of Reports During the Campaign") 
 
