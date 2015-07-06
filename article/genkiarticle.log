@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.8)  3 JUL 2015 18:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.8)  6 JUL 2015 18:46
 entering extended mode
 **genkiarticle.tex
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.tex
@@ -127,51 +127,74 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
 ]
-Overfull \hbox (237.79355pt too wide) in paragraph at lines 144--150
+Missing character: There is no ‚ in font ptmb7t!
+Missing character: There is no Ä in font ptmb7t!
+Missing character: There is no ô in font ptmb7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 1189) in paragraph at lines 142--143
+ \OT1/ptm/b/n/10 Ya-hoo Crowd-sourc-ing Japan \OT1/ptm/m/n/10 The pur-pose of Y
+a-hoo
+ []
+
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+
+Overfull \hbox (237.79355pt too wide) in paragraph at lines 176--182
  [] 
  []
 
-<images/FReports.png, id=9, 942.52126pt x 503.8825pt>
+<images/FReports.png, id=8, 942.52126pt x 503.8825pt>
 File: images/FReports.png Graphic file (type png)
 
 <use images/FReports.png>
-Package pdftex.def Info: images/FReports.png used on input line 169.
+Package pdftex.def Info: images/FReports.png used on input line 215.
 (pdftex.def)             Requested size: 239.39438pt x 127.97704pt.
-
-<images/RPerDay.png, id=10, 713.66624pt x 503.8825pt>
+ [2]
+<images/RPerDay.png, id=13, 713.66624pt x 503.8825pt>
 File: images/RPerDay.png Graphic file (type png)
  <use images/RPerDay.png>
-Package pdftex.def Info: images/RPerDay.png used on input line 178.
+Package pdftex.def Info: images/RPerDay.png used on input line 224.
 (pdftex.def)             Requested size: 239.39438pt x 169.01888pt.
 
-<images/NewUsers.png, id=11, 713.66624pt x 503.8825pt>
+<images/NewUsers.png, id=14, 713.66624pt x 503.8825pt>
 File: images/NewUsers.png Graphic file (type png)
 
 <use images/NewUsers.png>
-Package pdftex.def Info: images/NewUsers.png used on input line 185.
+Package pdftex.def Info: images/NewUsers.png used on input line 231.
 (pdftex.def)             Requested size: 239.39438pt x 169.01888pt.
 
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.bbl
-[2 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/FReport
-s.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/RPe
-rDay.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/
-NewUsers.png>]) [3
-
-]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+) [3 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/FRepo
+rts.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/R
+PerDay.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/image
+s/NewUsers.png>]
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.aux)
  ) 
 Here is how much of TeX's memory you used:
- 1258 strings out of 493921
- 17603 string characters out of 3144853
- 74184 words of memory out of 3000000
- 4568 multiletter control sequences out of 15000+200000
+ 1262 strings out of 493921
+ 17654 string characters out of 3144853
+ 76304 words of memory out of 3000000
+ 4572 multiletter control sequences out of 15000+200000
  16774 words of font info for 32 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,10n,19p,969b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -181,7 +204,7 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on genkiarticle.pdf (3 pages, 84048 bytes).
+Output written on genkiarticle.pdf (3 pages, 92119 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

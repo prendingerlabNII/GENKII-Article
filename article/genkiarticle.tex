@@ -70,7 +70,11 @@ A good abstract will leave people satisfied that they know
 
 The ubiquity of hand-held devices opened up new opportunities for research. Nowadays it is accessible to perform off-site studies, and collect data in real-time and across great geographical spans.
 
+One of the ways to deploy these off-site studies is by using micro-tasks markets. We are specially interested in this type of crowdsourcing.
+
 This new paradigm also gives rise to the search for new methodologies, and best practices, which may help the scientific community improve and stage new experiments, in a way that optimizes its resources.
+
+
  
 Genkii was conceived after realizing some problems in attracting users for crowdsourced studies in Japan. The initial hypothesis for this problem in attracting users for social studies had to do with privacy issues.
 
@@ -81,6 +85,9 @@ We want to study the effects of varying inducements to get people to perform a d
 \section{Related Work}
 \subsection{Crowdsourcing}
 
+
+
+
 \begin{enumerate}
 		
 \item Clearly identify the research goals; \item Select a study method; \item Devise an incentive mechanism;  \item Choose the target platform(s); \item Design and develop the mobile app; \item Prepare data collection; \item Implement a scheme to obtain informed consent from users; \item Distribute and promote the app; \item Continuously monitor data collection for a designated time period; \item Filter and analyze data to answer the research question
@@ -89,6 +96,8 @@ We want to study the effects of varying inducements to get people to perform a d
 
 
 \subsection{Rewards and Motivation}
+
+
 
 \begin{quote}
 When explicit incentives seek to change behavior in areas like education, contri-butions to public goods, and forming habits, a potential conflict arises between
@@ -102,12 +111,35 @@ Crowdsourcing has been often associated with Gamification, the use of game-desig
 
 
 The use of rewards to induce a desired behavior has been thoroughly studied. 
-There has been a clear separation between intrinsic rewards and extrinsinc rewards. 
+There has been a clear separation between intrinsic rewards and extrinsic rewards, and research points out that a high focus on incentives can ultimately lead to the alienation of creative thinkers. 
+According to \cite{Gneezy2011}, there are instances where monetary rewards (extrinsic rewards), work well. Mechanical based, self-contained and well-specified tasks seem to be the primary candidates for the usage of extrinsic rewards to motivate, induce or boost the agent's performance\cite{Ariely2009}.
 
-According to \cite{Gneezy2011}, there are instances where monetary rewards (extrinsic rewards), work well to provide a 
+However there is criticism when using incentives in areas like education and forming habits, because they can hinder natural intrinsic motivation, and the dependence on rewards may lead to reward inflation, and lower the effort the agent is willing to put towards the task \cite{Irlenbusch2005}. 
 
 
 
+
+
+\subsection{Crowdsourcing Platforms}
+
+
+\subsubsection{Amazon’s Mechanical Turk}
+
+Amazon's Mechanical Turk is a platform which serves as an interface for the deployment of crowd sourced tasks that are considered easier for humans than machines. 
+
+It creates a labor market in which individuals or corporations can list tasks (also known as HITs or “human intelligence tasks”), and a specified compensation. The workers can then elect to complete a determined task, against a deadline, and be compensated upon timely completion. The compensation for the worker is either being paid a determined amount, or a free volunteered work \cite{Mason2010}. 
+This model has been referred to in the literature as a micro-tasks market\cite{Kittur2008}.
+
+In \cite{Mason2010} it is shown and discussed the potential use of Amazon’s Mechanical Turk for laboratory experiments for a low fee (between 0.01\$ and 0.10\$).
+The main advantages cited for the merit of these studies, is the convenience of the platform in reaching many users in relatively short notice. Besides it is mentioned that the average cost per user is very low, in the order of cents per task.
+Also it has been shown \cite{Kittur2008} that, provided that the type of task is well-specified, easily measurable, and do not put a lot of emphasis on creativity,  the quality of work performed on Amazon’s Mechanical Turk is as good, and maybe even better than, work performed by experts paid under traditional contracting arrangements.
+
+Further experiment design recommendations offered in \cite{Kittur2008} including the concern in devising the tasks such that it discourages random or malicious completion, by making a good performance require the same or less effort than a tampered one.
+
+
+\subsubsection{Yahoo Crowdsourcing Japan}
+
+The purpose of Yahoo Crowdsourcing Japan is to 
 
 
 \section{Genkii}
@@ -127,7 +159,7 @@ Genkii is an application that enables gps localized satisfaction reports. Users 
 
 \subsection{Implementation}
 
-\subsection{Yahoo Crowdsourcing Japan}
+
 
 
 \subsection{Crowdsourcing Campaign}
@@ -153,6 +185,20 @@ Our goal is to study this and compare these two incentive schemes, specially by 
 
 
 The first campaign ran from 19/06/2015 ti 26/06/2015. 
+
+\subsection{Individual versus Group Analysis}
+
+One of the main concerns for the analysis of this experiment is whether to consider the aggregated group behavior or the individual behavior.
+
+After all our objective is to compare two reward schemes, and test our hypothesis. 
+
+** If we consider the group of users a system, then the aggregated behavior can be considered a legitimate approach, as we are interested on the overall behaviour of the system, when designing a large scale study. 
+
+An analogy is the way we study and understand temperature in Physics. Temperature is defined as a measure of the average kinetic energy of the particles in a system. We can define, derive, and predict an enormous range of behaviours, by measuring the temperature of the system. However the behaviour of an individual particle in the system, and its kinectic energy, is complex and difficult to associate with the behaviour of the group of particles.
+
+is a measure of the average kinetic energy of the particles in a system
+
+*theory of ergodicity
 
 \section{Results}
 
@@ -187,7 +233,17 @@ As we can observe in Figure \ref{fig:freqreportsperday1} the campaign quickly to
 	\end{center}
 \end{figure}
 
+\section{Discussion}
+
+Despite the inherent advantages of time and reach cost, crowdsourced studies end up forgoing the control over the experimental setting. It is difficult to assure conditions for representative demographics. 
+This fine grained control can be replaced by large numbers in statistical sampling. 
+ 
+
+
 \section{Conclusions}
+
+Future developments for Genkii include the application of the knowledge acquired to 
+In this study we considered only the usage of monetary inducements. There's extensive literature on gamification, and the usage of other methods to keep the users engaged. Future steps include offering a version with gamefication elements, and after a similar user acquisition compare the engagement, and drop rates of the study.
 
 \section{ Acknowledgments}
 
