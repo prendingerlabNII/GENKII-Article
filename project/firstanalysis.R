@@ -22,6 +22,11 @@ plot(table(report1st$user_id))
 
 #frequency table
 ftable(table(report1st$user_id))
+sd(as.data.frame(table(report1st$user_id))$Freq)
+mean(as.data.frame(table(report1st$user_id))$Freq)
+median(as.data.frame(table(report1st$user_id))$Freq)
+var(as.data.frame(table(report1st$user_id))$Freq)
+sd(as.data.frame(table(report1st$user_id))$Freq)
 
 summary(as.data.frame(table(report1st$user_id)))
 
@@ -35,3 +40,27 @@ hist(as.POSIXct(report1st$timestamp/1000.0, origin="1970-01-01"),"days", freq=TR
 
 #new of users joining
 hist(as.POSIXct(user1st_new$joined/1000.0, origin="1970-01-01"),"days", freq=TRUE, xlab="Campaign days", ylab="Number of Users that Joined", main="New Users")
+
+#people who reportonly once
+data<-report1st[which(as.data.frame(table(report1st$user_id))$Freq ==1),]
+barplot(table(data['gesture_confirmation_id']), names.arg = c('Happy', 'Okay', 'Sad'), main = 'Frequency of Reported Gestures')
+
+
+df<-NULL;
+i= 1
+while(i<21){
+  #Some code that generates new row
+  aux<-as.data.frame(ftable(table(report1st$user_id)))
+  #data<-report1st[which(as.data.frame(table(report1st$user_id))$Freq ==aux[1][i,]),]
+  data <- report1st[ report1st$user_id %in% as.data.frame(table(report1st$user_id))[which(as.data.frame(table(report1st$user_id))$Freq ==aux[1][i,]),1] ,]
+  rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
+ data
+  i<-i+1
+#  nrow(data[data['gesture_confirmation_id']==1,])/nrow(data)
+#  nrow(data[data['gesture_confirmation_id']==2,])/nrow(data)
+#  nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)
+}
+#as.data.frame(table(report1st$user_id))[which(as.data.frame(table(report1st$user_id))$Freq ==aux[1][2,]),1]
+color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
+              +             "lightblue")
+barplot(t(df), col=color)
