@@ -63,4 +63,55 @@ while(i<21){
 #as.data.frame(table(report1st$user_id))[which(as.data.frame(table(report1st$user_id))$Freq ==aux[1][2,]),1]
 color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
               +             "lightblue")
-barplot(t(df), col=color)
+
+bp<-barplot(t(df), col=color, xlab='Number reports made by users')
+axis(1, at=bp, labels=as.data.frame(ftable(table(report1st$user_id)))$Var1)
+legend("topright", 
+       legend = c("Happy", "OK", "Sad"), 
+       fill = color)
+
+
+library(dplyr) 
+
+result <- filtered_user_reports1st %>%
+  group_by(user_id) %>%  
+  summarise_each(funs(first, last), timestamp) %>%
+  mutate(difference = first - last)
+result
+
+
+## Drop rate rewards
+
+plot(table(reports_rewards$reward)/table(reports_rewards$reward)[1][1]*100, xlab="Yahoo Crowdsourcing Tasks Completed", ylab="Percentage of Users", main='User Drop Rate ');
+
+#exponential regression
+dataframe = (as.data.frame(table(reports_rewards$reward)/table(reports_rewards$reward)[1][1]*100))
+f <- function(x,a,b) {a * exp(b * x)}
+dataframe$x = as.numeric(dataframe$Var1)
+dataframe$y = dataframe$Freq
+st <- coef(nls(log(y) ~ log(f(x, a, b)), dataframe, start = c(a = 1, b = 1)))
+md<-nls(y ~ f(x, a, b), dataframe, start = st)
+
+
+## Drop rate rewards
+
+plot(x=dataframe$x, y=dataframe$y, xlab="Yahoo Crowdsourcing Tasks Completed", ylab="Percentage of Users", main="User Drop Rate");
+
+# library(reshape2)
+# library(ggplot2)
+# 
+# prd <- dataframe
+# 
+# result <- prd
+# result$mdl1 <- predict(md, newdata = prd)
+# 
+# result <-  melt(result, id.vars = "x", variable.name = "model",
+#                 value.name = "fitted")
+# ggplot(result, aes(x = x, y = fitted)) +
+#   theme_bw() +
+#   geom_point(data = prd, aes(x = x, y = y)) +
+#   geom_line(aes(colour = model), size = 1)
+
+
+lines(dataframe$x,exp(fitted(md)),col=2)
+

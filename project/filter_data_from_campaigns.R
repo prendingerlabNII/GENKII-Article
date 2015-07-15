@@ -20,6 +20,15 @@ user1st <- user
 user1st_new<- user[ (user$joined >= 1434672000000) & (user$joined < 1435330800000),]
 
 user1stTaskFinished<- user[ (user$yahooTaskFinished >= 1434672000000) & (user$yahooTaskFinished < 1435330800000),]
+user1st$date = as.Date(as.POSIXct(user1st$joined/1000.0, origin="1970-01-01"))
 
 #get date field
 report1st$date = as.Date(as.POSIXct(report1st$timestamp/1000.0, origin="1970-01-01"))
+
+
+#we only count users that joined prior to 24
+filtered_user_reports1st <- report1st[report1st$user_id<196,]
+
+filtered_user_reports1st <- merge(x=filtered_user_reports1st, y=reward_unlocked, by = "id")
+
+reports_rewards <-filtered_user_reports1st[filtered_user_reports1st$reward>0 & filtered_user_reports1st$reward<11,]
