@@ -41,3 +41,11 @@ legend("topright",
 length(which(genkii_over_hour$gesture_confirmation_id == 1))
 length(which(genkii_over_hour$gesture_confirmation_id == 2))
 length(which(genkii_over_hour$gesture_confirmation_id == 3))
+
+bp<-barplot(t(df)   , col=color, xlab='Hour', main="Genkiiness Over a Day Cycle")
+axis(1, at=bp, labels=as.data.frame(table(genkii_over_hour$hour))$Var1)
+legend("topright", 
+       legend = c("Happy", "OK", "Sad"), 
+       fill = color)
+lines(0.49)
+

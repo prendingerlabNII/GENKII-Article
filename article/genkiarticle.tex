@@ -183,19 +183,19 @@ Our goal is to study this and compare these two incentive schemes, specially by 
 
 The first campaign ran from 19/06/2015 to 26/06/2015. The second campaign featuring increasing rewards ran from 08/07/2015 to 15/07/2015.
 
-\subsection{Individual versus Group Analysis}
-
-One of the main concerns for the analysis of this experiment is whether to consider the aggregated group behavior or the individual behavior.
-
-After all our objective is to compare two reward schemes, and test our hypothesis. 
-
-** If we consider the group of users a system, then the aggregated behavior can be considered a legitimate approach, as we are interested on the overall behaviour of the system, when designing a large scale study. 
-
-An analogy is the way we study and understand temperature in Physics. Temperature is defined as a measure of the average kinetic energy of the particles in a system. We can define, derive, and predict an enormous range of behaviours, by measuring the temperature of the system. However the behaviour of an individual particle in the system, and its kinectic energy, is complex and difficult to associate with the behaviour of the group of particles.
-
-is a measure of the average kinetic energy of the particles in a system
-
-*theory of ergodicity
+%\subsection{Individual versus Group Analysis}
+%
+%One of the main concerns for the analysis of this experiment is whether to consider the aggregated group behavior or the individual behavior.
+%
+%After all our objective is to compare two reward schemes, and test our hypothesis. 
+%
+%** If we consider the group of users a system, then the aggregated behavior can be considered a legitimate approach, as we are interested on the overall behaviour of the system, when designing a large scale study. 
+%
+%An analogy is the way we study and understand temperature in Physics. Temperature is defined as a measure of the average kinetic energy of the particles in a system. We can define, derive, and predict an enormous range of behaviours, by measuring the temperature of the system. However the behaviour of an individual particle in the system, and its kinectic energy, is complex and difficult to associate with the behaviour of the group of particles.
+%
+%is a measure of the average kinetic energy of the particles in a system
+%
+%*theory of ergodicity
 
 \subsection{Expectations and Hypotheses}
 
@@ -215,7 +215,7 @@ At first glance in order to understand the data collected it's important to stud
 	\end{center}
 \end{figure}
 
-As we can observe in Figure \ref{fig:freqreportsperday1} the campaign quickly took off. During the last three days we verified a drop in the number of reports being made. Our hypothesis for this has to do with the architecture of the Yahoo crowdsourcing and a limit of times the each task could be unlocked, as we were primarily interested on studying the sequential behaviour. Also users understood that given the time constraint between reports (4 hours), it was became more difficult to finish the set of 10 tasks.
+As we can observe in Figure \ref{fig:freqreportsperday1} the campaign quickly took off. During the last three days we verified a drop in the number of reports being made. Our hypothesis for this has to do with the architecture of the Yahoo crowdsourcing and a limit of times the each task could be unlocked, as we were primarily interested on studying the sequential behavior. Also users understood that given the time constraint between reports (4 hours), it was became more difficult to finish the set of 10 tasks.
 
 \begin{figure}[htb]
 	\begin{center}
@@ -231,24 +231,35 @@ As we can observe in Figure \ref{fig:freqreportsperday1} the campaign quickly to
 	\end{center}
 \end{figure}
 
-\section{Discussion}
 
-Despite the inherent advantages of time and reach cost, crowdsourced studies end up forgoing the control over the experimental setting. It is difficult to assure conditions for representative demographics. 
-This fine grained control can be replaced by large numbers in statistical sampling. 
+\subsection{Genkii Territory}
+
+As location enabled emotional report application, Genkii provides insights on the location of the users, and overall mobility.
+
+To capture mobility information we created the concept of "Genkii Territory", which we define as the area that spans between the maximum and minimum latitude and the maximum and minimum longitude reached by a player, adjusted for the earth shape, by assuming a sinusoidal projection. This area is an estimate of overall mobility.
+It is important to keep in mind that we limited the ability to report consecutively on the same location.
+
+We calculated the "Genkii Territory" for all players that report at least 6 times during both campaigns. There were 65 users that fit the requirements set.
+
+Given the fact that the distribution of the areas that we obtained (in $km^2$),
+has a great variance, the standard deviation is 19105.4$km^2$, the mean being 4698.00, and the median 81.72. We categorize the players, regarding their mobility according to the table.
+
+House Dweller >2$km^2$
+Neighborhood Dweller 2 $km^2$
+District Dweller 10$km^2$
+Short Commuter 500$km^2$
+Commuter 5000$km^2$
+Traveler >5000$km^2$
 
 
-During the first campaign, we noticed that 19\% of the users that provide reports ended up providing more reports than what the rewarded ones.
-This points us to the merit of the application in capturing the users' interest. 
-Perhaps the effect of the stable reward experiment made users shift their focus from the reward acquisition to the application. Besides clearly displaying the instructions, and the presence of the timer, Genkii allows the user to explore and play with the application, making reports (as long as successive reports are not made in the same place). 
-The design decision to use gestures started as a way to promote a mechanical task but ended up providing a playful way to make a Genkii report.
 
 
-\subsection{Genkii Distributions}
+\subsection{Genkii Distribution}
 
 In order to capture trends over time we user all the reports collected during both campaigns.
 With these results we seek to understand more about the users who signed with Yahoo Crowdsourcing to provide Genkii reports.
 
-The mean proportion of registered emotions is 49\% of Happy reports, 39\% of OK, and 12\% of Sad Reports.
+The mean proportion of registered emotions is 49\% of ''Happy reports'', 39\% of ''OK'', and 12\% of ''Sad'' Reports.
 
 
 In the Figure \ref{fig:genkiioverday} capture the hourly distribution of the reports. We can observe that there seems to be a cyclic pattern during the day, with the lowest amount of reports made at 1, 9, and 17. Culturally it is interesting to verify that these are common commuter times. 
@@ -266,12 +277,28 @@ In contrast the higher amount of reports seems to be made around 4, 12 and 20. O
 Meal times or meal breaks seem also to be privileged by users to make reports. 
 We always verify during the hour after the slot with a report peak there is a rise on general dissatisfaction, which is interesting because the peak report times (4,12, and 20) also represent peaks of the ''Feeling Happy'' reports.
 
-These results reinforce that users tend to use the Genkii app as a pastime. Furthermore the periodicity of reports seem to point  
-
-
+These results reinforce that users tend to use the Genkii app as a pastime. 
 
 \subsection{Gestures} 
 The accuracy (the gesture predicted by the system being the same as the gesture confirmed), is 85.3\% for the first campaign, and 83.6\% for the second campaign.
+
+\section{Discussion}
+
+Despite the inherent advantages of time and reach cost, crowdsourced studies end up forgoing the control over the experimental setting. It is difficult to assure conditions for representative demographics. 
+This fine grained control can be replaced by large numbers in statistical sampling. 
+
+
+During the first campaign, we noticed that 19\% of the users that provide reports ended up providing more reports than what the rewarded ones.
+This points us to the merit of the application in capturing the users' interest. 
+Perhaps the effect of the stable reward experiment made users shift their focus from the reward acquisition to the application. Besides clearly displaying the instructions, and the presence of the timer, Genkii allows the user to explore and play with the application, making reports (as long as successive reports are not made in the same place). 
+The design decision to use gestures started as a way to promote a mechanical task but ended up providing a playful way to make a Genkii report.
+
+
+
+
+
+
+
 
 
  
