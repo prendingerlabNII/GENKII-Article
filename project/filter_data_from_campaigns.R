@@ -75,3 +75,10 @@ genkii_territory$date = as.Date(as.POSIXct(genkii_territory$timestamp/1000.0, or
 genkii_territory_users <- as.data.frame(table(genkii_territory$user_id))
 genkii_territory_users <- genkii_territory_users[genkii_territory_users$Freq>=6,]
 genkii_territory <- genkii_territory[genkii_territory$user_id %in% genkii_territory_users$Var1 ,]
+
+#### GENKII Evolution
+
+genkii_over_hour <- report2[ ((report2$timestamp >= 1434672000000) & (report2$timestamp < 1435330800000)) | ((report2$timestamp >= 1436313622000) & (report2$timestamp < 1436918422000)),]
+
+
+

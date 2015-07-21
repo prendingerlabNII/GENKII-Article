@@ -22,11 +22,7 @@
 % proceedings, working notes, and technical reports.
 %
 \title{Genkii - The Effects of Varying Sequential Rewards for User's Motivation to Complete a Set of Crowdfunded Tasks}
-\author{Helmut Prendinger \\
-helmut@nii.ac.jp\\
-National Institute of Informatics,\\
-2-1-2 Hitotsubashi, Chiyoda-ku, \\ Tokyo, 101-8430, Japan \\ 
-\And Ruben Geraldes \\
+\author{Ruben Geraldes \\
 rubengeraldes@gmail.com \\
 Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
 	Av. Prof. Cavaco Silva, \\ Taguspark Porto Salvo, Portugal\\ 
@@ -34,10 +30,10 @@ Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
 	daniela.fontes@ist.utl.pt \\
 	Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
 	Av. Prof. Cavaco Silva, \\ Taguspark Porto Salvo, Portugal\\
-	\AND Daniel Morais\\
-	rui.prada@tecnico.ulisboa.pt\\
-	Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
-	Av. Prof. Cavaco Silva, \\ Taguspark Porto Salvo, Portugal\\
+	\AND Helmut Prendinger \\
+	helmut@nii.ac.jp\\
+	National Institute of Informatics,\\
+	2-1-2 Hitotsubashi, Chiyoda-ku, \\ Tokyo, 101-8430, Japan \\ 
 	\And Rui Prada\\
 	rui.prada@tecnico.ulisboa.pt\\
 	INESC-ID ,\\
@@ -185,7 +181,7 @@ Our goal is to study this and compare these two incentive schemes, specially by 
 \end{table}
 
 
-The first campaign ran from 19/06/2015 to 26/06/2015. 
+The first campaign ran from 19/06/2015 to 26/06/2015. The second campaign featuring increasing rewards ran from 08/07/2015 to 15/07/2015.
 
 \subsection{Individual versus Group Analysis}
 
@@ -201,12 +197,13 @@ is a measure of the average kinetic energy of the particles in a system
 
 *theory of ergodicity
 
+\subsection{Expectations and Hypotheses}
+
+
 \section{Results}
 
 The first campaign counted with 436 genkii reports.
 115 users installed the Genkii application, and 79 users provided at least one report.
- 
-The accuracy (the gesture predicted by the system being the same as the gesture confirmed), is 85.3\%.
 
 The main goal of this study is to compare the effect of rewards on the user's reporting behaviour.
 At first glance in order to understand the data collected it's important to study the overall frequency of the user reports. In the Figure \ref{fig:freqreports1} we can observe that in fact there seems to be considerable onboarding effect with 39 users making 1 report. But we also have a group of 15 users that made more than the strictly required (10 reports).
@@ -243,7 +240,40 @@ This fine grained control can be replaced by large numbers in statistical sampli
 During the first campaign, we noticed that 19\% of the users that provide reports ended up providing more reports than what the rewarded ones.
 This points us to the merit of the application in capturing the users' interest. 
 Perhaps the effect of the stable reward experiment made users shift their focus from the reward acquisition to the application. Besides clearly displaying the instructions, and the presence of the timer, Genkii allows the user to explore and play with the application, making reports (as long as successive reports are not made in the same place). 
-The design decision to use gestures started as a way to promote a mechanical task but ended up providing a playful way to make a Genkii report. 
+The design decision to use gestures started as a way to promote a mechanical task but ended up providing a playful way to make a Genkii report.
+
+
+\subsection{Genkii Distributions}
+
+In order to capture trends over time we user all the reports collected during both campaigns.
+With these results we seek to understand more about the users who signed with Yahoo Crowdsourcing to provide Genkii reports.
+
+The mean proportion of registered emotions is 49\% of Happy reports, 39\% of OK, and 12\% of Sad Reports.
+
+
+In the Figure \ref{fig:genkiioverday} capture the hourly distribution of the reports. We can observe that there seems to be a cyclic pattern during the day, with the lowest amount of reports made at 1, 9, and 17. Culturally it is interesting to verify that these are common commuter times. 
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/GenkioverDay}
+		\caption{Captured feelings overa day cycle.\label{fig:genkiioverday}}
+	\end{center}
+\end{figure}
+
+The fact that we used a total of 1059 reports to construct this visualization seems to help us capture a overall stable group behavior. The daily activity is clearly separated in 8 hour periods.
+
+In contrast the higher amount of reports seems to be made around 4, 12 and 20. Once again we can hypothesize that around 4 we have a lot of reports from people going out at night. The highest peak of our registered reports happens just before the public transport resumes in the city of Tokyo (around 5). Although the relative proportion of emotions reported seems not to vary much throughout the day, the 3, 4, and 5 seem to be privileged time for expressing emotions. In the 4 a.m. slot we captured the highest peak of ''Feeling Happy'' report. The 3 and 5 a.m. slots see some of the highest proportions of ''Feeling Sad'' reports.
+
+Meal times or meal breaks seem also to be privileged by users to make reports. 
+We always verify during the hour after the slot with a report peak there is a rise on general dissatisfaction, which is interesting because the peak report times (4,12, and 20) also represent peaks of the ''Feeling Happy'' reports.
+
+These results reinforce that users tend to use the Genkii app as a pastime. Furthermore the periodicity of reports seem to point  
+
+
+
+\subsection{Gestures} 
+The accuracy (the gesture predicted by the system being the same as the gesture confirmed), is 85.3\% for the first campaign, and 83.6\% for the second campaign.
+
+
  
 
 
@@ -257,9 +287,13 @@ The design decision to use gestures started as a way to promote a mechanical tas
 Future developments for Genkii include the application of the knowledge acquired to 
 In this study, we considered only the usage of monetary inducements. There's an extensive literature on gamification, and the usage of other methods to keep the users engaged. Future steps include offering a version with gamification elements, and after a similar user acquisition compare the engagement and drop rates of the study.
 
+The emotional report data collected seems to plausibly explain trends and cultural aspects. One future work could be trying to match and validate this emotional report method with sentiment analysis from Twitter, for example. 
+
 
 
 \section{ Acknowledgments}
+
+We thank Daniel Morais for his contribution on the visualization of the Genkii Map website.
 
 %\section{Copyright}
 %All papers submitted for publication by AAAI Press must be accompanied by a valid signed copyright form or, in the case of technical reports, by a valid signed permission to distribute form. There are no exceptions to this requirement. You must send us the original version of this form. However, to meet the deadline, you may fax (1-650-321-4457) or scan and e-mail the form (pubforms15@aaai.org) to AAAI by the submission deadline, and then mail the original via postal mail to the AAAI office. \textbf{If you fail to send in a signed copyright or permission form, your paper will not be published.} You will find PDF versions of the AAAI copyright and permission to distribute forms in the author kit.
