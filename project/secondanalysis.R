@@ -134,5 +134,7 @@ md<-nls(y ~ f(x, a, b), dataframe1, start = st)
 
 points(x=dataframe1$x, y=dataframe1$y, xlab="Yahoo Crowdsourcing Tasks Completed", ylab="Percentage of Users", main="User Drop Rate", col="red", pch=2)
 tx= c("Increasing Rewards ","Fixed Rewards")
-legend("toprigh",legend= tx, col=c("blue", "red"), pch=c(1,2), cex=0.8)
+legend("topright",legend= tx, col=c("blue", "red"), pch=c(1,2), cex=0.8)
 
+comp <-dataframe1$y-dataframe$y
+mean(comp[which(dataframe1$y-dataframe$y >-10)])
