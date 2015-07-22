@@ -7,6 +7,16 @@
 accuracy <- ((report1st['gesture_id'] - report1st['gesture_confirmation_id']) ==0)
 mean(accuracy)
 
+length(which(user1st_new$hand=="Left"))
+length(which(user1st_new$hand=="Right"))
+length(which(user1st_new$hand=="Left"))/(length(which(user1st_new$hand=="Right"))+length(which(user1st_new$hand=="Left")))
+length(which(user2nd_new$hand=="Left"))
+length(which(user2nd_new$hand=="Right"))
+length(which(user2nd_new$hand=="Left"))/(length(which(user2nd_new$hand=="Right"))+length(which(user2nd_new$hand=="Left")))
+
+(length(which(user2nd_new$hand=="Left")) + length(which(user1st_new$hand=="Left"))) / (length(which(user2nd_new$hand=="Right"))+length(which(user2nd_new$hand=="Left") + (length(which(user1st_new$hand=="Right"))+length(which(user1st_new$hand=="Left")))))
+(13+8)/(106+110)
+
 #count(accuracy == FALSE)
 as.data.frame(table(accuracy))
 

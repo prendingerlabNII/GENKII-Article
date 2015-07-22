@@ -232,24 +232,48 @@ As we can observe in Figure \ref{fig:freqreportsperday1} the campaign quickly to
 \end{figure}
 
 
+
+\subsection{Reward Schemes}
+
+In order to compare the two incentive schemes devised we use the user drop rate as a metric for how well the users stick with our 10 task program.
+
+The user participation decreases sharply during the first two quests, on both campaigns.
+The only notable difference between the two campaigns is the drop experiences between the first and second quest. 
+The fixed reward scheme has an initial drop rate of 50\%. After the first reward, 35\% of the users did not claim any more rewards on the increasing reward incentive scheme.  
+In the increasing reward scheme the users have a smaller drop rate between the first and second quest, with 15\% more users remaining in comparison with the fixed reward scheme.
+
+Besides the transition from the first to second quest, there seems not to be a major difference in the way the two populations decrease throughout the experiment. The mean difference between the two sets is -3.1\%, the fixed reward scheme having a larger drop rate predominantly. However if we do not consider the drop rate that happens on the second task, there is an average -1.8\% difference between the increasing rewards and the fixed reward. This points us to the fact that the increasing reward scheme provides a slightly higher incentive to keep users on track.
+
+
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/UserDropRate}
+		\caption{Comparision of the user drop rate for the fixed reward scheme and the increasing reward incentive scheme.\label{fig:UserDropRate}}
+	\end{center}
+\end{figure}
+
 \subsection{Genkii Territory}
 
 As location enabled emotional report application, Genkii provides insights on the location of the users, and overall mobility.
 
-To capture mobility information we created the concept of "Genkii Territory", which we define as the area that spans between the maximum and minimum latitude and the maximum and minimum longitude reached by a player, adjusted for the earth shape, by assuming a sinusoidal projection. This area is an estimate of overall mobility.
+To capture mobility information we created the concept of ''Genkii Territory'', which we define as the area that spans between the maximum and minimum latitude and the maximum and minimum longitude reached by a player, adjusted for the earth shape, by assuming a sinusoidal projection. This area is an estimate of overall mobility.
 It is important to keep in mind that we limited the ability to report consecutively on the same location.
 
 We calculated the "Genkii Territory" for all players that report at least 6 times during both campaigns. There were 65 users that fit the requirements set.
 
 Given the fact that the distribution of the areas that we obtained (in $km^2$),
-has a great variance, the standard deviation is 19105.4$km^2$, the mean being 4698.00, and the median 81.72. We categorize the players, regarding their mobility according to the table.
+has a great variance, the standard deviation is 19105.4$km^2$, the mean being 4698.00, and the median 81.72. We categorize the players, regarding their mobility according to the bins in Figure \ref{fig:territory}.
 
-House Dweller >2$km^2$
-Neighborhood Dweller 2 $km^2$
-District Dweller 10$km^2$
-Short Commuter 500$km^2$
-Commuter 5000$km^2$
-Traveler >5000$km^2$
+Most of the Genkii users who report more often seem to travel daily distances associated with commuting. Either those who stay practically on  the same spot (''House Dwellers''), or those who travel long distances seem to be a minority.
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/territory}
+		\caption{Genkii territory. Given approximate sizes of cities, we figured 5 category ranges to classify our users with regards to their mobility. Those who have a ''Genkii Territory'' that spans for less than 2$km^2$ are called ''House Dwellers''. If they have a territory no larger than 10$km^2$ they are classified as ''Neighborhood Dwellers''. Most of our users have a territory comprised between 10$km^2$ and 500$km^2$ we figured these values could be common for commuters.
+			We also define a '''Long Distance Commuter'' category. And for  users which have a ''Genkii Territory'' larger than 5000$km^2$ we supply a ''Traveller'' label. \label{fig:territory}}
+	\end{center}
+\end{figure}
 
 
 
@@ -281,6 +305,7 @@ These results reinforce that users tend to use the Genkii app as a pastime.
 
 \subsection{Gestures} 
 The accuracy (the gesture predicted by the system being the same as the gesture confirmed), is 85.3\% for the first campaign, and 83.6\% for the second campaign.
+The prevalence of left-handed people is similar in both campaigns with 7\% of self reported left-handed people in the first campaign, and 10\% on the second campaign. Overall the percentage of left-handed people was 9.7\%
 
 \section{Discussion}
 

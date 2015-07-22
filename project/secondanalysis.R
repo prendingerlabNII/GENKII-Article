@@ -113,7 +113,7 @@ plot(x=dataframe$x, y=dataframe$y, xlab="Yahoo Crowdsourcing Tasks Completed", y
 #   geom_line(aes(colour = model), size = 1)
 
 
-lines(dataframe$x,exp(fitted(md)),col=2)
+lines(x=dataframe$x,y=exp(fitted(md)),col=2)
 
 
 ##### FIRST ANALISYS
@@ -132,7 +132,7 @@ md<-nls(y ~ f(x, a, b), dataframe1, start = st)
 
 ## Drop rate rewards
 
-points(x=dataframe1$x, y=dataframe1$y, xlab="Yahoo Crowdsourcing Tasks Completed", ylab="Percentage of Users", main="User Drop Rate", col="red")
+points(x=dataframe1$x, y=dataframe1$y, xlab="Yahoo Crowdsourcing Tasks Completed", ylab="Percentage of Users", main="User Drop Rate", col="red", pch=2)
 tx= c("Increasing Rewards ","Fixed Rewards")
-legend("toprigh",legend= tx, col=c("blue", "red"), pch=1, cex=0.8)
+legend("toprigh",legend= tx, col=c("blue", "red"), pch=c(1,2), cex=0.8)
 
