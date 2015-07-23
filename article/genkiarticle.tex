@@ -51,12 +51,8 @@ Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
 
 \begin{abstract}
 
-Genkii is a GPS enabled mood reporting application. In this work we plan and execute a crowsouced study using Yahoo Japan. Given a reward budget per user, we study the influence of offering a fixed reward in comparison to an increasing reward scheme. Even though the two methods perform very similarly, using an increasing reward scheme increases user completion of the set of tasks.
-\begin{quote}
-A good abstract will leave people satisfied that they know
-\\ what you did, \\ why you did it, \\ and what you found out. 
-\\ Keep it at 120 words.
-\end{quote}
+Genkii is a GPS enabled mood reporting application. In this work we plan and execute a crowdsourced study using Yahoo Japan. Given a reward budget per user, we study the influence of offering a fixed reward in comparison to an increasing reward scheme. Even though the two methods perform very similarly, using an increasing reward scheme increases user completion of the set of tasks.
+
 \end{abstract}
 
 \section{Introduction}
@@ -129,9 +125,9 @@ Amazon's Mechanical Turk is a platform which serves as an interface for the depl
 It creates a labor market in which individuals or corporations can list tasks (also known as HITs or “human intelligence tasks”), and a specified compensation. The workers can then elect to complete a determined task, against a deadline, and be compensated upon timely completion. The compensation for the worker is either being paid a determined amount, or a free volunteered work \cite{Mason2010}. 
 This model has been referred to in the literature as a micro-tasks market\cite{Kittur2008}.
 
-In \cite{Mason2010} it is shown and discussed the potential use of Amazon’s Mechanical Turk for laboratory experiments for a low fee (between 0.01\$ and 0.10\$).
+In \cite{Mason2010} it is shown and discussed the potential use of Amazon's Mechanical Turk for laboratory experiments for a low fee (between 0.01\$ and 0.10\$).
 The main advantages cited for the merit of these studies are the convenience of the platform in reaching many users in a relatively short notice and it is mentioned that the average cost per user is very low, in the order of cents per task.
-Also it has been shown \cite{Kittur2008} that, provided that the type of task is well-specified, easily measurable, and do not put a lot of emphasis on creativity,  the quality of work performed on Amazon’s Mechanical Turk is as good, and maybe even better than, work performed by experts paid under traditional contracting arrangements.
+Also it has been shown \cite{Kittur2008} that, provided that the type of task is well-specified, easily measurable, and do not put a lot of emphasis on creativity,  the quality of work performed on Amazon's Mechanical Turk is as good, and maybe even better than, work performed by experts paid under traditional contracting arrangements.
 
 Further experiment design recommendations offered in \cite{Kittur2008} including the concern in devising the tasks such that it discourages random or malicious completion, by making a good performance require the same or less effort than a tampered one.
 
@@ -200,7 +196,15 @@ The first campaign ran from 19/06/2015 to 26/06/2015. The second campaign featur
 
 \subsection{Expectations and Hypotheses}
 
+Intuitively we expect the fixed reward scheme to have a greater on-boarding, with more players joining in enticed by a considerable reward. On the other hand, we expect less players joining the increasing reward version, but those who join will be motivated to get bigger and bigger rewards.
 
+This experiment is going to be deployed in the Japanese population via Yahoo Crowdsourcing. Genkii, as a location enabled mood reporting application, allows the capture of interesting informations about its users. Even though there may be validity issues regarding the accuracy of Genkii to relay truthful reports, the system is designed in a way that the effort to report a false mood is exactly the same as for reporting the actual mood evaluated by the user, according to the best practices referred in \cite{Kittur2008}.
+
+ We hope we will be able to capture some insights about the people who use this service.
+ 
+ We also expect to collect a set of best practices, and lessons learned that can be applied to future crowdsourced studies, in particular those using Yahoo Japan.  
+
+%suggestion sentiment annalysis with Genkii
 \section{Results}
 
 The first campaign featuring a fixed reward scheme counted with 436 genkii reports.
@@ -221,14 +225,14 @@ As we can observe in Figure \ref{fig:freqreportsperday1} the campaign quickly to
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=1\linewidth]{images/RPerDay}
-		\caption{Number of Reports made on each day of the campaign.\label{fig:freqreportsperday1}}
+		\caption{Number of Reports made on each day of the fixed reward campaign campaign.\label{fig:freqreportsperday1}}
 	\end{center}
 \end{figure}
 
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=1\linewidth]{images/NewUsers}
-		\caption{User acquisition throughout the campaign.\label{fig:newusers1}}
+		\caption{User acquisition throughout the fixed reward campaign.\label{fig:newusers1}}
 	\end{center}
 \end{figure}
 
@@ -343,7 +347,9 @@ These results reinforce that users tend to use the Genkii app as a pastime.
 
 \subsection{Gestures} 
 The accuracy (the gesture predicted by the system being the same as the gesture confirmed), is 85.3\% for the first campaign, and 83.6\% for the second campaign.
-The prevalence of left-handed people is similar in both campaigns with 7\% of self reported left-handed people in the first campaign, and 10\% on the second campaign. Overall the percentage of left-handed people was 9.7\%
+The prevalence of left-handed people is similar in both campaigns with 7\% of self reported left-handed people in the first campaign, and 10\% on the second campaign. Overall the percentage of left-handed people was 9.7\%.
+
+The confirmed accuracy of the gesture predicted was 85\% for the paid reports and 84.3\% for non-rewarded reports. Once again there seems not to be a significant difference between reports that are rewarded and non-rewarded reports.
 
 \section{Discussion}
 
@@ -351,12 +357,13 @@ Despite the inherent advantages of time and reach cost, crowdsourced studies end
 This fine grained control can be replaced by large numbers in statistical sampling. 
 
 
-During the first campaign, we noticed that 19\% of the users that provide reports ended up providing more reports than what the rewarded ones.
+During the first campaign, using fixed rewards, we noticed that 19\% of the users that provide reports ended up providing more reports than the strictly rewarded ones.
 This points us to the merit of the application in capturing the users' interest. 
-Perhaps the effect of the stable reward experiment made users shift their focus from the reward acquisition to the application. Besides clearly displaying the instructions, and the presence of the timer, Genkii allows the user to explore and play with the application, making reports (as long as successive reports are not made in the same place). 
-The design decision to use gestures started as a way to promote a mechanical task but ended up providing a playful way to make a Genkii report.
+Perhaps the effect of the stable reward experiment made users shift their focus from the reward acquisition to the application. Besides clearly displaying the instructions, and the presence of the timer, Genkii allows the user to explore and play with the application, making reports (as long as successive reports are not made in the same place).
+ 
+The design decision to use gestures started as a way to promote a mechanical task but ended up providing a playful way to make a Genkii report, which made the non-rewarded reports around 35\% of all reports registered. This points to the fact that Genkii succeeds in keeping the users interested, and motivated without inducements. This brings us to an important conclusion: careful design, and toy/game like attributes play an important role in keeping the users engaged. We can go even further in stating that in general we did not verify a difference in the quality of reports, because the relative proportions remain practically the same whether the users unlock a reward or not.
 
-
+From the data captured from the application we were able to categorize the population who enrolled to try the Genkii application and get rewarded by doing so. We found out that most people who joined have a certain degree of mobility associated with commuting. It was also interesting to find that the usage of the application has a periodic behavior, with 8 hour cycles. 
 
 
 
@@ -374,7 +381,9 @@ The design decision to use gestures started as a way to promote a mechanical tas
 
 
 
-Future developments for Genkii include the application of the knowledge acquired to 
+Future developments for Genkii include the application of the knowledge acquired to new areas.
+
+
 In this study, we considered only the usage of monetary inducements. There's an extensive literature on gamification, and the usage of other methods to keep the users engaged. Future steps include offering a version with gamification elements, and after a similar user acquisition compare the engagement and drop rates of the study.
 
 The emotional report data collected seems to plausibly explain trends and cultural aspects. One future work could be trying to match and validate this emotional report method with sentiment analysis from Twitter, for example. 

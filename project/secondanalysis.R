@@ -157,13 +157,17 @@ r2<-reward_unlocked[which(reward_unlocked$reward==0| reward_unlocked$reward>10 )
 
 genkii_over_hour[(genkii_over_hour$user_id %in% r1 | genkii_over_hour$user_id %in% r2) ,]
 
+g<-genkii_over_hour[(genkii_over_hour$user_id %in% r1 | genkii_over_hour$user_id %in% r2) ,]
+accuracy <- ((g['gesture_id'] - g['gesture_confirmation_id']) ==0)
+mean(accuracy)
+
 df<-NULL;
 
   data <- genkii_over_hour[(genkii_over_hour$user_id %in% r1 | genkii_over_hour$user_id %in% r2) ,]
   rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
 
-r1<-reward_unlocked2[which(reward_unlocked2$reward>0| reward_unlocked2$reward<=10 ), 2]
-r2<-reward_unlocked[which(reward_unlocked$reward>0| reward_unlocked$reward<=10 ), 2]
+r1<-reward_unlocked2[which(reward_unlocked2$reward>0& reward_unlocked2$reward<=10 ), 2]
+r2<-reward_unlocked[which(reward_unlocked$reward>0& reward_unlocked$reward<=10 ), 2]
 
 data <- genkii_over_hour[(genkii_over_hour$user_id %in% r1 | genkii_over_hour$user_id %in% r2) ,]
 rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
@@ -179,6 +183,34 @@ legend("topright",
        fill = color)
 
 
+# > t(df)
+# [,1]      [,2]
+# [1,] 0.4925201 0.4820563
+# [2,] 0.4004603 0.3947624
+# [3,] 0.1070196 0.1231814
+# > df[,1]-df[,2]
+# [1] 0.09205984 0.08729389
+# > df[,1]
+# [1] 0.4925201 0.4820563
+# > df[1,1]-df[1,2]
+# [1] 0.09205984
+# > df[1,1]
+# [1] 0.4925201
+# > df[1,2]
+# [1] 0.4004603
+# > df[2,1]
+# [1] 0.4820563
+# > df[1,1]-df[2,1]
+# [1] 0.01046388
+# > df[1,2]-df[2,2]
+# [1] 0.005697933
+# > df[1,3]-df[2,3]
+# [1] -0.01616181
+# > 
+
+
+
+
 r1<-reward_unlocked2[which(reward_unlocked2$reward==0| reward_unlocked2$reward>10 ), 2]
 r2<-reward_unlocked[which(reward_unlocked$reward==0| reward_unlocked$reward>10 ), 2]
 
@@ -189,8 +221,8 @@ df<-NULL;
 data <- genkii_over_hour[(genkii_over_hour$user_id %in% r2) ,]
 rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
 
-r1<-reward_unlocked2[which(reward_unlocked2$reward>0| reward_unlocked2$reward<=10 ), 2]
-r2<-reward_unlocked[which(reward_unlocked$reward>0| reward_unlocked$reward<=10 ), 2]
+r1<-reward_unlocked2[which(reward_unlocked2$reward>0& reward_unlocked2$reward<=10 ), 2]
+r2<-reward_unlocked[which(reward_unlocked$reward>0& reward_unlocked$reward<=10 ), 2]
 
 data <- genkii_over_hour[( genkii_over_hour$user_id %in% r2) ,]
 rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
