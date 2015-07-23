@@ -77,9 +77,9 @@ We want to study the effects of varying inducements to get people to perform a d
 
 \section{Related Work}
 \subsection{Crowdsourcing}
+\label{subsec:Crowdsourcing}
 
-
-
+In order to set up a crowdsourcing campaign we use the framework suggested in \cite{Henze2013}.
 
 \begin{enumerate}
 		
@@ -153,11 +153,13 @@ Genkii is an application that enables gps localized satisfaction reports. Users 
 
 
 \subsection{Implementation}
-
+\label{subsec:implementation}
 
 
 
 \subsection{Crowdsourcing Campaign}
+
+
 
 Following the methodology suggested by \cite{Choi2014}, we want to perform a study where one group will be considered our baseline by receiving a fixed reward for each task over time.
 Besides our control group, we devise a second incentive scheme, that using the same amount of points, poses as a progressive reward system. We can compare both reward schemes on \ref{tab:rewards}.
@@ -167,15 +169,36 @@ Our goal is to study this and compare these two incentive schemes, specially by 
 \begin{table}[!h]
 	\caption{ Scheme of rewards used for the crowdsourcing campaign. Using the same amount of reward points, for our first group these rewards are the same for every task over time. On the second group, we devised an increasing reward mechanism. }
 	\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+	\hline  Reward & Task 1  & Task 2  & Task 3  & Task 4 \\ 
+	\hline  Stable Rewards & 20 & 20 & 20 & 20  \\ 
+	\hline Increasing Rewards & 5 & 10 & 15 & 30  \\ 
+	\hline 
+\end{tabular} 
+
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-	\hline  Reward & Task 1  & Task 2  & Task 3  & Task 4 & Task 5 & Task 6 & Task 7 & Task 8 & Task 9 & Task 10 \\ 
-	\hline  Stable Rewards & 20 & 20 & 20 & 20 & 20 & 20 & 20 & 20 & 20 & 20 \\ 
-	\hline Increasing Rewards & 5 & 10 & 15 & 30 & 35 & 40 & 50 & 60 & 60 & 60 \\ 
+	\hline   Task 5 & Task 6 & Task 7 & Task 8 & Task 9 & Task 10 \\ 
+	\hline   20 & 20 & 20 & 20 & 20 & 20 \\ 
+	\hline   35 & 40 & 50 & 60 & 60 & 60 \\ 
 	\hline 
 \end{tabular} 
 \end{center}
 \label{tab:rewards}
 \end{table}
+
+As stated in Section \ref{subsec:Crowdsourcing}, we followed the framework proposed in \cite{Henze2013}.
+\begin{enumerate}
+	\item Our main research goal is to compare two different reward schemes using the same budget per user (fixed rewards versus increasing rewards), on a set of sequential tasks;
+	\item We are going to compare user on-boarding and drop rates in order to understand how do the two rewards perform;
+	\item By using Yahoo Crowdsourcing we award ''T-Points'', a popular loyalty points card;
+	\item The target platform of the Genkii App is Android;
+	\item We discuss the design of the application in detail on Section \ref{subsec:implementation} . We focused on creating a user interface using gestures, which makes the interaction with the application uncommon;
+	\item Before launching the campaign featured in this study we performed several pilot tests, which enabled us to understand the Yahoo Crowdsourcing platform; 
+	\item After the installation we present a tutorial where we explain the type of data collected, and the terms in which the data will be used;
+	\item The Yahoo Crowdsourcing is an interesting solution to distribute our application, since it handles the promotion;
+	\item During the campaign we monitor for the server uptime, ensuring the data is being properly retrieved;
+	\item The last point has to to with filtering and answering the research question. In the following section we present and discuss the results obtained.
+\end{enumerate}
 
 
 The first campaign ran from 19/06/2015 to 26/06/2015. The second campaign featuring increasing rewards ran from 08/07/2015 to 15/07/2015.
@@ -238,7 +261,7 @@ As we can observe in Figure \ref{fig:freqreportsperday1} the campaign quickly to
 
 
 The increasing reward campaign run from 08/07/2015 to 15/07/2015.
-123 users installed the genkii app during the campaign, with 94 users providing at least one report. We captured 623 genkii reports during this campaign.
+123 users installed the Genkii app during the campaign, with 94 users providing at least one report. We captured 623 Genkii reports during this campaign.
 
 %This makes the second campaign 
 
