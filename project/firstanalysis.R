@@ -125,3 +125,12 @@ plot(x=dataframe$x, y=dataframe$y, xlab="Yahoo Crowdsourcing Tasks Completed", y
 
 lines(dataframe$x,exp(fitted(md)),col=2)
 
+
+
+reward_unlocked[which(reward_unlocked$reward==0| reward_unlocked$reward>10 ), 1]
+
+length(reward_unlocked[which(reward_unlocked$reward==0 | reward_unlocked$reward>10 ), 1])
+
+length(reward_unlocked$id)
+
+(423-149)/423

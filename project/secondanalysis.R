@@ -138,3 +138,15 @@ legend("topright",legend= tx, col=c("blue", "red"), pch=c(1,2), cex=0.8)
 
 comp <-dataframe1$y-dataframe$y
 mean(comp[which(dataframe1$y-dataframe$y >-10)])
+
+
+### Proportion incentivized reports
+
+reward_unlocked2[which(reward_unlocked2$reward==0| reward_unlocked2$reward>10 ), 1]
+
+length(reward_unlocked2[which(reward_unlocked2$reward==0 | reward_unlocked2$reward>10 ), 1])
+
+length(reward_unlocked2$id)
+
+(605-228)/605
+

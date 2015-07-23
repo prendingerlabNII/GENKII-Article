@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.8)  22 JUL 2015 14:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.8)  23 JUL 2015 13:11
 entering extended mode
 **genkiarticle.tex
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.tex
@@ -181,42 +181,57 @@ Package pdftex.def Info: images/NewUsers.png used on input line 229.
 File: images/UserDropRate.png Graphic file (type png)
 
 <use images/UserDropRate.png>
-Package pdftex.def Info: images/UserDropRate.png used on input line 253.
+Package pdftex.def Info: images/UserDropRate.png used on input line 258.
 (pdftex.def)             Requested size: 239.39438pt x 189.24763pt.
+
+<images/RewardedvsNonRewarded.png, id=17, 758.835pt x 503.8825pt>
+File: images/RewardedvsNonRewarded.png Graphic file (type png)
+
+<use images/RewardedvsNonRewarded.png>
+Package pdftex.def Info: images/RewardedvsNonRewarded.png used on input line 27
+0.
+(pdftex.def)             Requested size: 239.39438pt x 158.96217pt.
  [3 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/RPerDa
 y.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/New
 Users.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images
 /UserDropRate.png>]
+<images/RewardsIncreasing.png, id=24, 700.6175pt x 503.8825pt>
+File: images/RewardsIncreasing.png Graphic file (type png)
+
+<use images/RewardsIncreasing.png>
+Package pdftex.def Info: images/RewardsIncreasing.png used on input line 279.
+(pdftex.def)             Requested size: 239.39438pt x 172.17122pt.
+
 <images/territory.png, id=25, 912.40875pt x 503.8825pt>
 File: images/territory.png Graphic file (type png)
 
 <use images/territory.png>
-Package pdftex.def Info: images/territory.png used on input line 274.
+Package pdftex.def Info: images/territory.png used on input line 303.
 (pdftex.def)             Requested size: 239.39438pt x 132.20578pt.
 
 <images/GenkioverDay.png, id=26, 964.60374pt x 503.8825pt>
 File: images/GenkioverDay.png Graphic file (type png)
 
 <use images/GenkioverDay.png>
-Package pdftex.def Info: images/GenkioverDay.png used on input line 294.
+Package pdftex.def Info: images/GenkioverDay.png used on input line 323.
 (pdftex.def)             Requested size: 239.39438pt x 125.04767pt.
- [4 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/territ
-ory.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/G
-enkioverDay.png>]
+ [4 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/Reward
+edvsNonRewarded.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/arti
+cle/images/RewardsIncreasing.png> <C:/Users/PrendingerLab/Documents/GitHub/Genk
+iArticle/article/images/territory.png>]
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.bbl
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
-) [5
-
-]
+) [5 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/Genki
+overDay.png>]
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.aux)
  ) 
 Here is how much of TeX's memory you used:
- 1280 strings out of 493921
- 18072 string characters out of 3144853
- 75328 words of memory out of 3000000
- 4587 multiletter control sequences out of 15000+200000
+ 1292 strings out of 493921
+ 18448 string characters out of 3144853
+ 75344 words of memory out of 3000000
+ 4597 multiletter control sequences out of 15000+200000
  16774 words of font info for 32 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,10n,19p,969b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -228,9 +243,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on genkiarticle.pdf (5 pages, 131412 bytes).
+Output written on genkiarticle.pdf (5 pages, 142336 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
