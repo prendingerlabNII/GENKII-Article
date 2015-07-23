@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.8)  24 JUL 2015 04:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.8)  24 JUL 2015 04:24
 entering extended mode
 **genkiarticle.tex
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.tex
@@ -128,9 +128,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 
 
 ]
-Missing character: There is no ‚ in font ptmb7t!
-Missing character: There is no Ä in font ptmb7t!
-Missing character: There is no ô in font ptmb7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -138,9 +135,9 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 1189) in paragraph at lines 137--138
- \OT1/ptm/b/n/10 Ya-hoo Crowd-sourc-ing Japan \OT1/ptm/m/n/10 The pur-pose of Y
-a-hoo
+Underfull \hbox (badness 4726) in paragraph at lines 137--138
+ \OT1/ptm/b/n/10 Ya-hoo Crowd-sourc-ing Japan \OT1/ptm/m/n/10 Ya-hoo Crowd-sour
+c-ing
  []
 
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
@@ -240,7 +237,7 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on genkiarticle.pdf (6 pages, 146460 bytes).
+Output written on genkiarticle.pdf (6 pages, 147285 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
