@@ -25,6 +25,7 @@ with open('filteredresults1st.csv', 'r') as red:
                 if len(user_report_dic[row['user_id']]) ==0:
                     user_report_dic[row['user_id']].append(row['timestamp'])
                     user_report_reward[row['user_id']].append(1)
+                    user_report_reward[row['user_id']].append(int(row["StatQuestCounter"]))
                 else:           
                     last_reward=0
                     last_reward_number=0
@@ -41,6 +42,8 @@ with open('filteredresults1st.csv', 'r') as red:
                     else:
                         user_report_dic[row['user_id']].append(row['timestamp'])
                         user_report_reward[row['user_id']].append(0)
+                    if user_report_reward[row['user_id']][2]< int(row["StatQuestCounter"]):
+                        user_report_reward[row['user_id']][2]=int(row["StatQuestCounter"])
             
                 w.writerow({field_names[0]:row['id'], field_names[1]:row['user_id'], field_names[2]:user_report_reward[row['user_id']][-1]})
 

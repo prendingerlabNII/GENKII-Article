@@ -27,7 +27,7 @@ mean(as.data.frame(table(report2nd$user_id))$Freq)
 median(as.data.frame(table(report2nd$user_id))$Freq)
 var(as.data.frame(table(report2nd$user_id))$Freq)
 sd(as.data.frame(table(report2nd$user_id))$Freq)
-
+4+1+3+3+1+1+3+1+2+1+1+1+1+1
 summary(as.data.frame(table(report2nd$user_id)))
 
 plot(as.data.frame(ftable(table(report2nd$user_id))), xlab= "Number of reports made by a user", main="Frequency of the Number of Reports Made by the Users")
@@ -149,4 +149,85 @@ length(reward_unlocked2[which(reward_unlocked2$reward==0 | reward_unlocked2$rewa
 length(reward_unlocked2$id)
 
 (605-228)/605
+
+##Genkii paid versus non paid
+
+r1<-reward_unlocked2[which(reward_unlocked2$reward==0| reward_unlocked2$reward>10 ), 2]
+r2<-reward_unlocked[which(reward_unlocked$reward==0| reward_unlocked$reward>10 ), 2]
+
+genkii_over_hour[(genkii_over_hour$user_id %in% r1 | genkii_over_hour$user_id %in% r2) ,]
+
+df<-NULL;
+
+  data <- genkii_over_hour[(genkii_over_hour$user_id %in% r1 | genkii_over_hour$user_id %in% r2) ,]
+  rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
+
+r1<-reward_unlocked2[which(reward_unlocked2$reward>0| reward_unlocked2$reward<=10 ), 2]
+r2<-reward_unlocked[which(reward_unlocked$reward>0| reward_unlocked$reward<=10 ), 2]
+
+data <- genkii_over_hour[(genkii_over_hour$user_id %in% r1 | genkii_over_hour$user_id %in% r2) ,]
+rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
+
+#as.data.frame(table(report2nd$user_id))[which(as.data.frame(table(report2nd$user_id))$Freq ==aux[1][2,]),1]
+color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
+            +             "lightblue")
+
+bp<-barplot(t(df), col=color, main="Effects of the reward on the report outcome")
+axis(1, at=bp, labels=c("Non Rewarded", "Rewarded"))
+legend("topright", 
+       legend = c("Happy", "OK", "Sad"), 
+       fill = color)
+
+
+r1<-reward_unlocked2[which(reward_unlocked2$reward==0| reward_unlocked2$reward>10 ), 2]
+r2<-reward_unlocked[which(reward_unlocked$reward==0| reward_unlocked$reward>10 ), 2]
+
+genkii_over_hour[(genkii_over_hour$user_id %in% r1 | genkii_over_hour$user_id %in% r2) ,]
+
+df<-NULL;
+
+data <- genkii_over_hour[(genkii_over_hour$user_id %in% r2) ,]
+rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
+
+r1<-reward_unlocked2[which(reward_unlocked2$reward>0| reward_unlocked2$reward<=10 ), 2]
+r2<-reward_unlocked[which(reward_unlocked$reward>0| reward_unlocked$reward<=10 ), 2]
+
+data <- genkii_over_hour[( genkii_over_hour$user_id %in% r2) ,]
+rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
+
+#as.data.frame(table(report2nd$user_id))[which(as.data.frame(table(report2nd$user_id))$Freq ==aux[1][2,]),1]
+color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
+            +             "lightblue")
+
+bp<-barplot(t(df), col=color, main="Effects of the reward on the report outcome")
+axis(1, at=bp, labels=c("Non Rewarded", "Rewarded"))
+legend("topright", 
+       legend = c("Happy", "OK", "Sad"), 
+       fill = color)
+
+r1<-reward_unlocked2[which(reward_unlocked2$reward==0| reward_unlocked2$reward>10 ), 2]
+r2<-reward_unlocked[which(reward_unlocked$reward==0| reward_unlocked$reward>10 ), 2]
+
+genkii_over_hour[(genkii_over_hour$user_id %in% r1 | genkii_over_hour$user_id %in% r2) ,]
+
+df<-NULL;
+
+data <- genkii_over_hour[(genkii_over_hour$user_id %in% r1) ,]
+rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
+
+r1<-reward_unlocked2[which(reward_unlocked2$reward>0| reward_unlocked2$reward<=10 ), 2]
+r2<-reward_unlocked[which(reward_unlocked$reward>0| reward_unlocked$reward<=10 ), 2]
+
+data <- genkii_over_hour[( genkii_over_hour$user_id %in% r1) ,]
+rbind(df,c(nrow(data[data['gesture_confirmation_id']==1,])/nrow(data), nrow(data[data['gesture_confirmation_id']==2,])/nrow(data), nrow(data[data['gesture_confirmation_id']==3,])/nrow(data)))->df
+
+#as.data.frame(table(report2nd$user_id))[which(as.data.frame(table(report2nd$user_id))$Freq ==aux[1][2,]),1]
+color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
+                      "lightblue")
+
+bp<-barplot(t(df), col=color, main="Effects of the reward on the report \n outcome for the increasing reward scheme")
+axis(1, at=bp, labels=c("Non Rewarded", "Rewarded"))
+legend("topright", 
+       legend = c("Happy", "OK", "Sad"), 
+       fill = color)
 

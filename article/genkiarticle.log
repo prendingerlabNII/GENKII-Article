@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.8)  23 JUL 2015 13:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.8)  23 JUL 2015 15:15
 entering extended mode
 **genkiarticle.tex
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.tex
@@ -122,7 +122,7 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
@@ -144,15 +144,15 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Underfull \hbox (badness 1189) in paragraph at lines 140--141
+Underfull \hbox (badness 1189) in paragraph at lines 141--142
  \OT1/ptm/b/n/10 Ya-hoo Crowd-sourc-ing Japan \OT1/ptm/m/n/10 The pur-pose of Y
 a-hoo
  []
 
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
 
-Overfull \hbox (237.79355pt too wide) in paragraph at lines 173--179
+Overfull \hbox (237.79355pt too wide) in paragraph at lines 174--180
  [] 
  []
 
@@ -160,77 +160,80 @@ Overfull \hbox (237.79355pt too wide) in paragraph at lines 173--179
 File: images/FReports.png Graphic file (type png)
 
 <use images/FReports.png>
-Package pdftex.def Info: images/FReports.png used on input line 213.
+Package pdftex.def Info: images/FReports.png used on input line 214.
 (pdftex.def)             Requested size: 239.39438pt x 127.97704pt.
- [2 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/FRepor
-ts.png>]
-<images/RPerDay.png, id=14, 713.66624pt x 503.8825pt>
+ <images/RPerDay.png, id=9, 713.66624pt x 503.8825pt>
 File: images/RPerDay.png Graphic file (type png)
- <use images/RPerDay.png>
-Package pdftex.def Info: images/RPerDay.png used on input line 222.
+
+<use images/RPerDay.png>
+Package pdftex.def Info: images/RPerDay.png used on input line 223.
 (pdftex.def)             Requested size: 239.39438pt x 169.01888pt.
 
-<images/NewUsers.png, id=15, 713.66624pt x 503.8825pt>
+<images/NewUsers.png, id=10, 713.66624pt x 503.8825pt>
 File: images/NewUsers.png Graphic file (type png)
 
 <use images/NewUsers.png>
-Package pdftex.def Info: images/NewUsers.png used on input line 229.
+Package pdftex.def Info: images/NewUsers.png used on input line 230.
 (pdftex.def)             Requested size: 239.39438pt x 169.01888pt.
-
-<images/UserDropRate.png, id=16, 637.38126pt x 503.8825pt>
+ [2]
+<images/UserDropRate.png, id=15, 637.38126pt x 503.8825pt>
 File: images/UserDropRate.png Graphic file (type png)
 
 <use images/UserDropRate.png>
-Package pdftex.def Info: images/UserDropRate.png used on input line 258.
+Package pdftex.def Info: images/UserDropRate.png used on input line 265.
 (pdftex.def)             Requested size: 239.39438pt x 189.24763pt.
 
-<images/RewardedvsNonRewarded.png, id=17, 758.835pt x 503.8825pt>
+<images/RewardedvsNonRewarded.png, id=16, 758.835pt x 503.8825pt>
 File: images/RewardedvsNonRewarded.png Graphic file (type png)
 
 <use images/RewardedvsNonRewarded.png>
 Package pdftex.def Info: images/RewardedvsNonRewarded.png used on input line 27
-0.
+7.
 (pdftex.def)             Requested size: 239.39438pt x 158.96217pt.
- [3 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/RPerDa
-y.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/New
-Users.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images
-/UserDropRate.png>]
-<images/RewardsIncreasing.png, id=24, 700.6175pt x 503.8825pt>
+ [3 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/FRepor
+ts.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/RP
+erDay.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images
+/NewUsers.png>]
+<images/RewardsIncreasing.png, id=23, 700.6175pt x 503.8825pt>
 File: images/RewardsIncreasing.png Graphic file (type png)
 
 <use images/RewardsIncreasing.png>
-Package pdftex.def Info: images/RewardsIncreasing.png used on input line 279.
+Package pdftex.def Info: images/RewardsIncreasing.png used on input line 286.
 (pdftex.def)             Requested size: 239.39438pt x 172.17122pt.
 
-<images/territory.png, id=25, 912.40875pt x 503.8825pt>
+<images/territory.png, id=24, 912.40875pt x 503.8825pt>
 File: images/territory.png Graphic file (type png)
 
 <use images/territory.png>
-Package pdftex.def Info: images/territory.png used on input line 303.
+Package pdftex.def Info: images/territory.png used on input line 310.
 (pdftex.def)             Requested size: 239.39438pt x 132.20578pt.
-
-<images/GenkioverDay.png, id=26, 964.60374pt x 503.8825pt>
+ [4 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/UserDr
+opRate.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/image
+s/RewardedvsNonRewarded.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArti
+cle/article/images/RewardsIncreasing.png> <C:/Users/PrendingerLab/Documents/Git
+Hub/GenkiArticle/article/images/territory.png>]
+<images/GenkioverDay.png, id=34, 964.60374pt x 503.8825pt>
 File: images/GenkioverDay.png Graphic file (type png)
 
 <use images/GenkioverDay.png>
-Package pdftex.def Info: images/GenkioverDay.png used on input line 323.
+Package pdftex.def Info: images/GenkioverDay.png used on input line 330.
 (pdftex.def)             Requested size: 239.39438pt x 125.04767pt.
- [4 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/Reward
-edvsNonRewarded.png> <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/arti
-cle/images/RewardsIncreasing.png> <C:/Users/PrendingerLab/Documents/GitHub/Genk
-iArticle/article/images/territory.png>]
+
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.bbl
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
-) [5 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/Genki
-overDay.png>]
+
+[5 <C:/Users/PrendingerLab/Documents/GitHub/GenkiArticle/article/images/Genkiov
+erDay.png>]) [6
+
+]
 (C:\Users\PrendingerLab\Documents\GitHub\GenkiArticle\article\genkiarticle.aux)
  ) 
 Here is how much of TeX's memory you used:
  1292 strings out of 493921
  18448 string characters out of 3144853
- 75344 words of memory out of 3000000
+ 76344 words of memory out of 3000000
  4597 multiletter control sequences out of 15000+200000
  16774 words of font info for 32 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -243,9 +246,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on genkiarticle.pdf (5 pages, 142336 bytes).
+Output written on genkiarticle.pdf (6 pages, 143582 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
