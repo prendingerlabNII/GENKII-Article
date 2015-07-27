@@ -21,7 +21,7 @@
 % The file aaai.sty is the style file for AAAI Press 
 % proceedings, working notes, and technical reports.
 %
-\title{Genkii - The Effects of Varying Sequential Rewards for User's Motivation to Complete a Set of Crowdfunded Tasks}
+\title{Genkii - An Affect Reporting Application for Studying the Effects of Fixed and Increasing Rewards}
 \author{Ruben Geraldes \\
 rubengeraldes@gmail.com \\
 Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
@@ -51,7 +51,7 @@ Instituto Superior T\'{e}cnico, \\ Universidade de Lisboa,\\
 
 \begin{abstract}
 
-Genkii is a GPS enabled mood reporting application. In this work we plan and execute a crowdsourced study using Yahoo Japan. Given a reward budget per user, we study the influence of offering a fixed reward in comparison to an increasing reward scheme. Even though the two methods perform very similarly, using an increasing reward scheme increases user completion of the set of tasks.
+Genkii is a GPS enabled affective state reporting application. In this work we plan and execute a crowdsourced study using Yahoo Japan. Given a reward budget per user, we study the influence of offering a fixed reward in comparison to an increasing reward scheme. Even though the two methods perform very similarly, using an increasing reward scheme increases user completion of the set of tasks.
 
 \end{abstract}
 
@@ -236,32 +236,17 @@ The first campaign featuring a fixed reward scheme counted with 436 genkii repor
 The main goal of this study is to compare the effect of rewards on the user's reporting behaviour.
 At first glance in order to understand the data collected it's important to study the overall frequency of the user reports. In the Figure \ref{fig:freqreports1} we can observe that in fact there seems to be considerable on-boarding effect with 39 users making 1 report. But we also have a group of 15 users that made more than the strictly required (10 reports).
 
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[width=1\linewidth]{images/FReports}
-		\caption{Frequency of reports made by users during the fixed reward campaign. As expected, the number of users that made only a single Genkii report (39) stands out. On average each user makes 5.5 reports with a standard deviation of 6.9 reports, the median is 2 reports.\label{fig:freqreports1}}
-	\end{center}
-\end{figure}
+
 
 As we can observe in Figure \ref{fig:freqreportsperday1} the campaign quickly took off. During the last three days we verified a drop in the number of reports being made. Our hypothesis for this has to do with the architecture of the Yahoo crowdsourcing and a limit of times the each task could be unlocked, as we were primarily interested on studying the sequential behavior. Also users understood that given the time constraint between reports (4 hours), it was became more difficult to finish the set of 10 tasks.
 
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[width=1\linewidth]{images/RPerDay}
-		\caption{Number of Reports made on each day of the fixed reward campaign campaign.\label{fig:freqreportsperday1}}
-	\end{center}
-\end{figure}
 
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[width=1\linewidth]{images/NewUsers}
-		\caption{User acquisition throughout the fixed reward campaign.\label{fig:newusers1}}
-	\end{center}
-\end{figure}
 
 
 The increasing reward campaign run from 08/07/2015 to 15/07/2015.
 123 users installed the Genkii app during the campaign, with 94 users providing at least one report. We captured 623 Genkii reports during this campaign.
+
+In both campaigns we observe that the last four days see a drop in user acquisition. This may happen due the promotion placement made by Yahoo Crowdfunding. 
 
 %This makes the second campaign 
 
@@ -403,8 +388,9 @@ The biggest bridge in terms of user droprate, as expected is between the first a
 
 
 
+This work provides a case study for anyone interested in pursuing crowd sourced studies with Yahoo Crowdsourcing Japan. First we figure that the amount of rewards did not trigger a very considerable change on the user on-boarding, with both campaigns, even though the increasing reward campaign, which started off with a lower reward managed to attract more users. Analyzing the frequency of one-time reporters, we find that actually the fixed reward campaign attracted more of these users (39) against the 30 users that reported only once.
 
-
+Our recommendation for future studies is to focus on the first 5 days of the campaign, or split a large campaign into smaller sized ones. The effect of rewards for sequential tasks does not differ drastically when using fixed or increasing rewards. However we noted a smaller user drop rate with the increasing rewards. 
 
 Future developments for Genkii include the application of the knowledge acquired to new areas, such as pain monitoring, disaster response. In either case it would be to our advantage if the application was able to trigger intrinsic motivation in its users.
 During the campaigns' time Genkii registered a significant percentage of unpaid reports (around 35\%).  
@@ -879,6 +865,56 @@ We thank Daniel Morais for his contribution on the visualization of the Genkii M
 %
 %\bigskip
 %\noindent Thank you for reading these instructions carefully. We look forward to receiving your electronic files!
+
+\appendix
+
+\section{Fixed Reward Campaign}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/FrequencyNumberReports_F}
+		\caption{Frequency of reports made by users during the fixed reward campaign. As expected, the number of users that made only a single Genkii report (39) stands out. On average each user makes 5.5 reports with a standard deviation of 6.9 reports, the median is 2 reports.\label{fig:freqreports1}}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/RPerDay_F}
+		\caption{Number of Reports made on each day of the fixed reward campaign.\label{fig:freqreportsperday1}}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/NewUsers_F}
+		\caption{User acquisition throughout the fixed reward campaign.\label{fig:newusers1}}
+	\end{center}
+\end{figure}
+
+\section{Increasing Reward Campaign}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/FrequencyNumberReports_I}
+		\caption{Frequency of reports made by users during the increasing reward campaign. As expected, the number of users that made only a single Genkii report (30) stands out. On average each user makes 4.1 reports with a standard deviation of 6.3 reports, the median is 2 reports.\label{fig:freqreports2}}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/RPerDay_I}
+		\caption{Number of Reports made on each day of the increasing reward campaign .\label{fig:freqreportsperday1}}
+	\end{center}
+\end{figure}
+
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{images/NewUsers_I}
+		\caption{User acquisition throughout the increasing reward campaign.\label{fig:newusers2}}
+	\end{center}
+\end{figure}
+
 
 \bibliographystyle{aaai}
 \bibliography{genkiarticle}

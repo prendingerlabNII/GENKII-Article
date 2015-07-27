@@ -45,6 +45,9 @@ Axis(as.data.frame(ftable(table(report1st$user_id))), at = c(0,5,10,15,20,25,30,
 axTicks(side=2)
 grid(nx = NULL, ny = NULL, col = "lightgray", lty = "dotted",lwd = par("lwd"))
 legend(text.font=12)
+
+
+
 #histogram of the frequency of reports
 hist(as.POSIXct(report1st$timestamp/1000.0, origin="1970-01-01"),"days", freq=TRUE, xlab="Campaign days", ylab="Number of Reports", main="Frequency of Reports During the Campaign") 
 
@@ -77,7 +80,7 @@ color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
 bp<-barplot(t(df), col=color, xlab='Number reports made by users')
 axis(1, at=bp, labels=as.data.frame(ftable(table(report1st$user_id)))$Var1)
 legend("topright", 
-       legend = c("Happy", "OK", "Sad"), 
+       legend = c("Excited", "OK", "Dull"), 
        fill = color)
 
 
@@ -134,3 +137,4 @@ length(reward_unlocked[which(reward_unlocked$reward==0 | reward_unlocked$reward>
 length(reward_unlocked$id)
 
 (423-149)/423
+

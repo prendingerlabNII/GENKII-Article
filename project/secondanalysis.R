@@ -43,7 +43,7 @@ hist(as.POSIXct(user2nd_new$joined/1000.0, origin="1970-01-01"),"days", freq=TRU
 
 #people who reportonly once
 data<-report2nd[which(as.data.frame(table(report2nd$user_id))$Freq ==1),]
-barplot(table(data['gesture_confirmation_id']), names.arg = c('Happy', 'Okay', 'Sad'), main = 'Frequency of Reported Gestures')
+barplot(table(data['gesture_confirmation_id']), names.arg = c('Excited', 'Okay', 'Dull'), main = 'Frequency of Reported Gestures')
 
 
 df<-NULL;
@@ -67,7 +67,7 @@ color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
 bp<-barplot(t(df), col=color, xlab='Number reports made by users')
 axis(1, at=bp, labels=as.data.frame(ftable(table(report2nd$user_id)))$Var1)
 legend("topright", 
-       legend = c("Happy", "OK", "Sad"), 
+       legend = c("Excited", "OK", "Dull"), 
        fill = color)
 
 
@@ -136,6 +136,9 @@ points(x=dataframe1$x, y=dataframe1$y, xlab="Yahoo Crowdsourcing Tasks Completed
 tx= c("Increasing Rewards ","Fixed Rewards")
 legend("topright",legend= tx, col=c("blue", "red"), pch=c(1,2), cex=0.8)
 
+Axis(at = c(1,2,3,4,5,6,7,8,9,10),side=1)
+axTicks(side=2)
+
 comp <-dataframe1$y-dataframe$y
 mean(comp[which(dataframe1$y-dataframe$y >-10)])
 
@@ -184,7 +187,7 @@ color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
 bp<-barplot(t(df), col=color, main="Effects of the reward on the report outcome")
 axis(1, at=bp, labels=c("Non Rewarded", "Rewarded"))
 legend("topright", 
-       legend = c("Happy", "OK", "Sad"), 
+       legend = c("Excited", "OK", "Dull"), 
        fill = color)
 
 
@@ -239,7 +242,7 @@ color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
 bp<-barplot(t(df), col=color, main="Effects of the reward on the report outcome")
 axis(1, at=bp, labels=c("Non Rewarded", "Rewarded"))
 legend("topright", 
-       legend = c("Happy", "OK", "Sad"), 
+       legend = c("Excited", "OK", "Dull"), 
        fill = color)
 
 r1<-reward_unlocked2[which(reward_unlocked2$reward==0| reward_unlocked2$reward>10 ), 2]
@@ -265,6 +268,6 @@ color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
 bp<-barplot(t(df), col=color, main="Effects of the reward on the report \n outcome for the increasing reward scheme")
 axis(1, at=bp, labels=c("Non Rewarded", "Rewarded"))
 legend("topright", 
-       legend = c("Happy", "OK", "Sad"), 
+       legend = c("Excited", "OK", "Dull"), 
        fill = color)
 
