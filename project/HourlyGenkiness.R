@@ -1,7 +1,7 @@
 ### GENKII OVER HOUR
 
 
-as.POSIXct(report2nd$timestamp/1000.0,, origin="1970-01-01", tz="Japan")
+#as.POSIXct(report2nd$timestamp/1000.0,, origin="1970-01-01", tz="Japan")
 
 
 #(time %% 86400) / 3600)
@@ -32,7 +32,7 @@ color <-  c("forestgreen", "skyblue4", "indianred", "indianred", "skyblue4",
 
 
 
-bp<-barplot(t(df) *as.data.frame(table(floor(((genkii_over_hour$timestamp/1000%% 86400) / 3600)+9)%%24))$Freq  , col=color, xlab='Hour', main="Genkiiness Over a Day Cycle")
+bp<-barplot(t(df) *as.data.frame(table(floor(((genkii_over_hour$timestamp/1000%% 86400) / 3600)+9)%%24))$Freq  , col=color, ylab="Number of reports registered", xlab='Hour', main="Genkiiness Over a Day Cycle")
 axis(1, at=bp, labels=as.data.frame(table(genkii_over_hour$hour))$Var1)
 legend("topright", 
        legend = c("Excited", "OK", "Dull"), 
